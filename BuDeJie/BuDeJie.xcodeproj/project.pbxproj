@@ -7,25 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		557774391C94037D00AA37D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 557774381C94037D00AA37D5 /* main.m */; };
-		5577743C1C94037D00AA37D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5577743B1C94037D00AA37D5 /* AppDelegate.m */; };
-		5577743F1C94037D00AA37D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5577743E1C94037D00AA37D5 /* ViewController.m */; };
-		557774421C94037D00AA37D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557774401C94037D00AA37D5 /* Main.storyboard */; };
 		557774441C94037D00AA37D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557774431C94037D00AA37D5 /* Assets.xcassets */; };
 		557774471C94037D00AA37D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557774451C94037D00AA37D5 /* LaunchScreen.storyboard */; };
+		5577746B1C9449CD00AA37D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 557774651C9449CD00AA37D5 /* AppDelegate.m */; };
+		5577746C1C9449CD00AA37D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 557774661C9449CD00AA37D5 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		557774341C94037D00AA37D5 /* BuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		557774381C94037D00AA37D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5577743A1C94037D00AA37D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5577743B1C94037D00AA37D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5577743D1C94037D00AA37D5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5577743E1C94037D00AA37D5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		557774411C94037D00AA37D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		557774431C94037D00AA37D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		557774461C94037D00AA37D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		557774481C94037D00AA37D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		557774641C9449CD00AA37D5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		557774651C9449CD00AA37D5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		557774661C9449CD00AA37D5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +53,7 @@
 		557774361C94037D00AA37D5 /* BuDeJie */ = {
 			isa = PBXGroup;
 			children = (
-				5577743A1C94037D00AA37D5 /* AppDelegate.h */,
-				5577743B1C94037D00AA37D5 /* AppDelegate.m */,
-				5577743D1C94037D00AA37D5 /* ViewController.h */,
-				5577743E1C94037D00AA37D5 /* ViewController.m */,
-				557774401C94037D00AA37D5 /* Main.storyboard */,
+				5577744E1C9449CD00AA37D5 /* Classes */,
 				557774431C94037D00AA37D5 /* Assets.xcassets */,
 				557774451C94037D00AA37D5 /* LaunchScreen.storyboard */,
 				557774481C94037D00AA37D5 /* Info.plist */,
@@ -74,9 +65,218 @@
 		557774371C94037D00AA37D5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				557774381C94037D00AA37D5 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5577744E1C9449CD00AA37D5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5577744F1C9449CD00AA37D5 /* Essence(精华) */,
+				557774531C9449CD00AA37D5 /* FriendTrend(关注) */,
+				557774571C9449CD00AA37D5 /* Main */,
+				5577745B1C9449CD00AA37D5 /* Me(我) */,
+				5577745F1C9449CD00AA37D5 /* New(新帖) */,
+				557774631C9449CD00AA37D5 /* Other */,
+				557774671C9449CD00AA37D5 /* publish(发布) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5577744F1C9449CD00AA37D5 /* Essence(精华) */ = {
+			isa = PBXGroup;
+			children = (
+				557774501C9449CD00AA37D5 /* Controller */,
+				557774511C9449CD00AA37D5 /* Model */,
+				557774521C9449CD00AA37D5 /* View */,
+			);
+			path = "Essence(精华)";
+			sourceTree = "<group>";
+		};
+		557774501C9449CD00AA37D5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		557774511C9449CD00AA37D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		557774521C9449CD00AA37D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		557774531C9449CD00AA37D5 /* FriendTrend(关注) */ = {
+			isa = PBXGroup;
+			children = (
+				557774541C9449CD00AA37D5 /* Controller */,
+				557774551C9449CD00AA37D5 /* Model */,
+				557774561C9449CD00AA37D5 /* View */,
+			);
+			path = "FriendTrend(关注)";
+			sourceTree = "<group>";
+		};
+		557774541C9449CD00AA37D5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		557774551C9449CD00AA37D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		557774561C9449CD00AA37D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		557774571C9449CD00AA37D5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				557774581C9449CD00AA37D5 /* Controller */,
+				557774591C9449CD00AA37D5 /* Model */,
+				5577745A1C9449CD00AA37D5 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		557774581C9449CD00AA37D5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		557774591C9449CD00AA37D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5577745A1C9449CD00AA37D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5577745B1C9449CD00AA37D5 /* Me(我) */ = {
+			isa = PBXGroup;
+			children = (
+				5577745C1C9449CD00AA37D5 /* Controller */,
+				5577745D1C9449CD00AA37D5 /* Model */,
+				5577745E1C9449CD00AA37D5 /* View */,
+			);
+			path = "Me(我)";
+			sourceTree = "<group>";
+		};
+		5577745C1C9449CD00AA37D5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5577745D1C9449CD00AA37D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5577745E1C9449CD00AA37D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5577745F1C9449CD00AA37D5 /* New(新帖) */ = {
+			isa = PBXGroup;
+			children = (
+				557774601C9449CD00AA37D5 /* Controller */,
+				557774611C9449CD00AA37D5 /* Model */,
+				557774621C9449CD00AA37D5 /* View */,
+			);
+			path = "New(新帖)";
+			sourceTree = "<group>";
+		};
+		557774601C9449CD00AA37D5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		557774611C9449CD00AA37D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		557774621C9449CD00AA37D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		557774631C9449CD00AA37D5 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				557774641C9449CD00AA37D5 /* AppDelegate.h */,
+				557774651C9449CD00AA37D5 /* AppDelegate.m */,
+				557774661C9449CD00AA37D5 /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		557774671C9449CD00AA37D5 /* publish(发布) */ = {
+			isa = PBXGroup;
+			children = (
+				557774681C9449CD00AA37D5 /* Controller */,
+				557774691C9449CD00AA37D5 /* Model */,
+				5577746A1C9449CD00AA37D5 /* View */,
+			);
+			path = "publish(发布)";
+			sourceTree = "<group>";
+		};
+		557774681C9449CD00AA37D5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		557774691C9449CD00AA37D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5577746A1C9449CD00AA37D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +338,6 @@
 			files = (
 				557774471C94037D00AA37D5 /* LaunchScreen.storyboard in Resources */,
 				557774441C94037D00AA37D5 /* Assets.xcassets in Resources */,
-				557774421C94037D00AA37D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,23 +348,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5577743F1C94037D00AA37D5 /* ViewController.m in Sources */,
-				5577743C1C94037D00AA37D5 /* AppDelegate.m in Sources */,
-				557774391C94037D00AA37D5 /* main.m in Sources */,
+				5577746C1C9449CD00AA37D5 /* main.m in Sources */,
+				5577746B1C9449CD00AA37D5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		557774401C94037D00AA37D5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				557774411C94037D00AA37D5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		557774451C94037D00AA37D5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
