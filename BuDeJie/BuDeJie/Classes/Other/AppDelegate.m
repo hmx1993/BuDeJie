@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HMXTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -22,43 +23,15 @@
     self.window = [[UIWindow alloc] init];
     
     //2.设置窗口的根控制器
-    UITabBarController *tabBarVc = [[UITabBarController alloc] init];
+    HMXTabBarController *tabBarVc = [[HMXTabBarController alloc] init];
     self.window.rootViewController = tabBarVc;
-    
-    //添加所有自控制器
-    [self addAllChildController];
     
     //3.显示窗口
     [self.window makeKeyAndVisible];
     
     return YES;
 }
-//添加所有自控制器
--(void)addAllChildController{
-    //精华
-    UIViewController *essence = [[UIViewController alloc] init];
-    essence.view.backgroundColor = [UIColor purpleColor];
-    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:essence];
-    //新帖
-    UIViewController *new = [[UIViewController alloc] init];
-    new.view.backgroundColor = [UIColor cyanColor];
-    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:new];
-    //发布
-    UIViewController *publish = [[UIViewController alloc] init];
-    publish.view.backgroundColor = [UIColor yellowColor];
-    
-    //关注
-    UIViewController *friendTrend = [[UIViewController alloc] init];
-    friendTrend.view.backgroundColor = [UIColor orangeColor];
-    UINavigationController *nav3 = [[UINavigationController alloc] initWithRootViewController:friendTrend];
-    
-    //我
-    UITableViewController *me = [[UITableViewController alloc] init];
-    me.view.backgroundColor = [UIColor redColor];
-    UINavigationController *nav4 = [[UINavigationController alloc] initWithRootViewController:me];
-    
-    
-}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
