@@ -12,7 +12,7 @@
 #import "HMXPublishViewController.h"
 #import "HMXFriendTrendViewController.h"
 #import "HMXMeViewController.h"
-
+#import "HMXTabBar.h"
 @interface HMXTabBarController ()
 
 @end
@@ -47,6 +47,9 @@
     
     //1.0 添加所有自控制器
     [self addAllChildController];
+    
+    //2.0系统的tabBar不能满足我们的要求,因此要自定义tabBar,将系统的tabBar换成自己定义TabBar,但是系统的tabBar是只读的,因此只能用KVC将其改掉,KVC可以直接访问类的成员变量
+    [self setValue:[[HMXTabBar alloc] init] forKey:@"tabBar"];
     
 }
 
@@ -85,6 +88,8 @@
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImageName];
     [self addChildViewController:nav];
 }
+
+
 
 
 

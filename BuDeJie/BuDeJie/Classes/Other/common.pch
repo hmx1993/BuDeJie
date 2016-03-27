@@ -1,0 +1,25 @@
+//
+//  common.pch
+//  BuDeJie
+//
+//  Created by hemengxiang on 16/3/27.
+//  Copyright © 2016年 hemengxiang. All rights reserved.
+//
+
+#ifndef common_pch
+#define common_pch
+
+#import "UIView+Frame.h"
+
+#ifdef DEBUG
+
+#define HMXLog(...) NSLog(__VA_ARGS__)
+
+#elif 
+
+#define HMXLog(...) 
+
+#endif
+
+
+#endif /* common_pch */
