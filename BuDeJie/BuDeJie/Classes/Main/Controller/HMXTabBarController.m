@@ -12,7 +12,7 @@
 #import "HMXPublishViewController.h"
 #import "HMXFriendTrendViewController.h"
 #import "HMXMeViewController.h"
-#import "HMXTabBar.h"
+
 @interface HMXTabBarController ()
 
 @end
@@ -48,15 +48,7 @@
     //1.0 添加所有自控制器
     [self addAllChildController];
     
-    //2.0 设置所有按钮的内容
-    [self setAllButton];
-    
-    HMXTabBar *tabBar = [[HMXTabBar alloc] init];
-    
-    [self setValue:tabBar forKey:@"tabBar"];
- 
 }
-
 
 //添加所有自控制器
 -(void)addAllChildController{
@@ -64,69 +56,36 @@
     //1.0 创建子控制器
     //精华
     HMXEssenceViewController *essence = [[HMXEssenceViewController alloc] init];
-    essence.view.backgroundColor = [UIColor purpleColor];
-    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:essence];
+    
+    [self setUpChildVC:essence title:@"精华" imageName:@"tabBar_essence_icon" selectedImageName:@"tabBar_essence_click_icon"];
     
     //新帖
     HMXNewViewController *new = [[HMXNewViewController alloc] init];
-    new.view.backgroundColor = [UIColor cyanColor];
-    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:new];
-    
-//    //发布
-//    HMXPublishViewController *publish = [[HMXPublishViewController alloc] init];
-//    publish.view.backgroundColor = [UIColor yellowColor];
+    [self setUpChildVC:new title:@"新帖" imageName:@"tabBar_new_icon" selectedImageName:@"tabBar_new_click_icon"];
     
     //关注
     HMXFriendTrendViewController *friendTrend = [[HMXFriendTrendViewController alloc] init];
-    friendTrend.view.backgroundColor = [UIColor orangeColor];
-    UINavigationController *nav3 = [[UINavigationController alloc] initWithRootViewController:friendTrend];
+    [self setUpChildVC:friendTrend title:@"关注" imageName:@"tabBar_friendTrends_icon" selectedImageName:@"tabBar_friendTrends_click_icon"];
     
     //我
     HMXMeViewController *me = [[HMXMeViewController alloc] init];
-    me.view.backgroundColor = [UIColor redColor];
-    UINavigationController *nav4 = [[UINavigationController alloc] initWithRootViewController:me];
-    
-    //2.0 添加子控制器
-    [self addChildViewController:nav1];
-    [self addChildViewController:nav2];
-//    [self addChildViewController:publish];
-    [self addChildViewController:nav3];
-    [self addChildViewController:nav4];
+    [self setUpChildVC:me title:@"我的" imageName:@"tabBar_me_icon" selectedImageName:@"tabBar_me_click_icon"];
 }
 
-//设置所有按钮的内容
--(void)setAllButton
+//创建一个子控制器
+-(void)setUpChildVC:(UIViewController *)vc title:(NSString *)title imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName
 {
-    
-    //精华
-    UINavigationController *nva1 = self.childViewControllers[0];
-    nva1.tabBarItem.title = @"精华";
-    nva1.tabBarItem.image = [UIImage imageNamed:@"tabBar_essence_icon"];
-    nva1.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_essence_click_icon"];
-    
-    //新帖
-    UINavigationController *nva2 = self.childViewControllers[1];
-    nva2.tabBarItem.title = @"新帖";
-    nva2.tabBarItem.image = [UIImage imageNamed:@"tabBar_new_icon"];
-    nva2.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_new_click_icon"];
-    
-    //发布
-//    UIViewController *VC = self.childViewControllers[2];
-//    VC.tabBarItem.image = [UIImage imageNamed:@"tabBar_publish_icon"];
-//    VC.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_publish_click_icon"];
-    
-    //关注
-    UINavigationController *nva3 = self.childViewControllers[2];
-    nva3.tabBarItem.title = @"关注";
-    nva3.tabBarItem.image = [UIImage imageNamed:@"tabBar_friendTrends_icon"];
-    nva3.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_friendTrends_click_icon"];
-    
-    //我的
-    UINavigationController *nva4 = self.childViewControllers[3];
-    nva4.tabBarItem.title = @"我的";
-    nva4.tabBarItem.image = [UIImage imageNamed:@"tabBar_me_icon"];
-    nva4.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_me_click_icon"];
-    
+    CGFloat r = arc4random_uniform(256) / 255.0;
+    CGFloat g = arc4random_uniform(256) / 255.0;
+    CGFloat b = arc4random_uniform(256) / 255.0;
+    vc.view.backgroundColor = [UIColor colorWithRed:r green:g blue:b alpha:1.0];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    vc.tabBarItem.title = title;
+    vc.tabBarItem.image = [UIImage imageNamed:imageName];
+    vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImageName];
+    [self addChildViewController:nav];
 }
+
+
 
 @end
