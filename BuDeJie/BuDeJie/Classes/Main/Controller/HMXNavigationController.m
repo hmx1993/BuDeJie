@@ -14,10 +14,16 @@
 
 @implementation HMXNavigationController
 
++(void)load
+{
+    [[UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[self class]]] setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
+
 
 
 //重写Push方法,可以修改返回按钮的设置

@@ -13,8 +13,8 @@
 		5577746F1C944DB100AA37D5 /* HMXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5577746E1C944DB100AA37D5 /* HMXTabBarController.m */; };
 		558B2B841CA8B6DC005D19E2 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 558B2B811CA8B6DC005D19E2 /* UIBarButtonItem+Extension.m */; };
 		558B2B851CA8B6DC005D19E2 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 558B2B831CA8B6DC005D19E2 /* UIView+Frame.m */; };
-		55A564121CAD32A8002ED684 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A564111CAD32A8002ED684 /* TestViewController.m */; };
 		55A564151CAD337D002ED684 /* HMXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A564141CAD337D002ED684 /* HMXNavigationController.m */; };
+		55C87F671CAD566700C2B361 /* HMXFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C87F661CAD566700C2B361 /* HMXFriendTrendViewController.xib */; };
 		55CD6D671CA81989002E7187 /* HMXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CD6D661CA81989002E7187 /* HMXTabBar.m */; };
 		55DC53081C945C5300FE4F95 /* HMXEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DC53071C945C5300FE4F95 /* HMXEssenceViewController.m */; };
 		55DC530B1C945C7F00FE4F95 /* HMXFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DC530A1C945C7F00FE4F95 /* HMXFriendTrendViewController.m */; };
@@ -38,10 +38,9 @@
 		558B2B811CA8B6DC005D19E2 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		558B2B821CA8B6DC005D19E2 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		558B2B831CA8B6DC005D19E2 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		55A564101CAD32A8002ED684 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		55A564111CAD32A8002ED684 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		55A564131CAD337D002ED684 /* HMXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXNavigationController.h; sourceTree = "<group>"; };
 		55A564141CAD337D002ED684 /* HMXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXNavigationController.m; sourceTree = "<group>"; };
+		55C87F661CAD566700C2B361 /* HMXFriendTrendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXFriendTrendViewController.xib; sourceTree = "<group>"; };
 		55CD6D651CA81989002E7187 /* HMXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXTabBar.h; sourceTree = "<group>"; };
 		55CD6D661CA81989002E7187 /* HMXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXTabBar.m; sourceTree = "<group>"; };
 		55CD6D6B1CA8242C002E7187 /* common.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.pch; sourceTree = "<group>"; };
@@ -169,6 +168,7 @@
 			children = (
 				55DC53091C945C7F00FE4F95 /* HMXFriendTrendViewController.h */,
 				55DC530A1C945C7F00FE4F95 /* HMXFriendTrendViewController.m */,
+				55C87F661CAD566700C2B361 /* HMXFriendTrendViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -308,8 +308,6 @@
 				557774681C9449CD00AA37D5 /* Controller */,
 				557774691C9449CD00AA37D5 /* Model */,
 				5577746A1C9449CD00AA37D5 /* View */,
-				55A564101CAD32A8002ED684 /* TestViewController.h */,
-				55A564111CAD32A8002ED684 /* TestViewController.m */,
 			);
 			path = "publish(发布)";
 			sourceTree = "<group>";
@@ -426,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C87F671CAD566700C2B361 /* HMXFriendTrendViewController.xib in Resources */,
 				557774441C94037D00AA37D5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,7 +490,6 @@
 				55DC530B1C945C7F00FE4F95 /* HMXFriendTrendViewController.m in Sources */,
 				558B2B841CA8B6DC005D19E2 /* UIBarButtonItem+Extension.m in Sources */,
 				5577746C1C9449CD00AA37D5 /* main.m in Sources */,
-				55A564121CAD32A8002ED684 /* TestViewController.m in Sources */,
 				5577746F1C944DB100AA37D5 /* HMXTabBarController.m in Sources */,
 				55CD6D671CA81989002E7187 /* HMXTabBar.m in Sources */,
 				5577746B1C9449CD00AA37D5 /* AppDelegate.m in Sources */,

@@ -53,7 +53,7 @@
     [self setValue:[[HMXTabBar alloc] init] forKey:@"tabBar"];
     
     [self.tabBar setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
-    
+   
 }
 
 //添加所有自控制器
@@ -91,7 +91,7 @@
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:imageName];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImageName];
-    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+   
     [self addChildViewController:nav];
 }
 

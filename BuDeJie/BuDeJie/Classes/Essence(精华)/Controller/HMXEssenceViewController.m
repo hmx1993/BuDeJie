@@ -7,7 +7,6 @@
 //
 
 #import "HMXEssenceViewController.h"
-#import "TestViewController.h"
 @interface HMXEssenceViewController ()
 
 @end
@@ -27,14 +26,6 @@
 -(void)tagClick:(UIButton *)btn
 {
     HMXLog(@"左边的按扭被点击了");
-}
-
-
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    TestViewController *test = [[TestViewController alloc] init];
-    test.view.backgroundColor = [UIColor redColor];
-    [self.navigationController pushViewController:test animated:YES];
 }
 
 
