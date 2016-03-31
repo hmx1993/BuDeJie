@@ -18,14 +18,8 @@
     [super viewDidLoad];
     self.navigationItem.title = @"我的关注";
     //设置左边的按钮
-    UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [leftBtn setBackgroundImage:[UIImage imageNamed:@"friendsRecommentIcon"] forState:UIControlStateNormal];
-    [leftBtn setBackgroundImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] forState:UIControlStateHighlighted];
-    [leftBtn sizeToFit];
-    
-    [leftBtn addTarget:self action:@selector(friendsClick:) forControlEvents:UIControlEventTouchUpInside];
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" heighLightImage:@"friendsRecommentIcon-click" target:self action:@selector(friendsClick:)];
+    self.view.backgroundColor = globleBg;
 
 }
 

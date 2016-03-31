@@ -13,6 +13,7 @@
 #import "HMXFriendTrendViewController.h"
 #import "HMXMeViewController.h"
 #import "HMXTabBar.h"
+#import "HMXNavigationController.h"
 @interface HMXTabBarController ()
 
 @end
@@ -51,6 +52,8 @@
     //2.0系统的tabBar不能满足我们的要求,因此要自定义tabBar,将系统的tabBar换成自己定义TabBar,但是系统的tabBar是只读的,因此只能用KVC将其改掉,KVC可以直接访问类的成员变量
     [self setValue:[[HMXTabBar alloc] init] forKey:@"tabBar"];
     
+    [self.tabBar setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
+    
 }
 
 //添加所有自控制器
@@ -78,19 +81,18 @@
 //创建一个子控制器
 -(void)setUpChildVC:(UIViewController *)vc title:(NSString *)title imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName
 {
-    CGFloat r = arc4random_uniform(256) / 255.0;
-    CGFloat g = arc4random_uniform(256) / 255.0;
-    CGFloat b = arc4random_uniform(256) / 255.0;
-    vc.view.backgroundColor = [UIColor colorWithRed:r green:g blue:b alpha:1.0];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    
+#warning  在这个位置设置颜色,将会导致所有的控制器将会被提前创建,控制器最好是在用户第一次点击的时候被创建,因此每个控制器的颜色应该放到viewDidLoad中设置
+//    CGFloat r = arc4random_uniform(256) / 255.0;
+//    CGFloat g = arc4random_uniform(256) / 255.0;
+//    CGFloat b = arc4random_uniform(256) / 255.0;
+//    vc.view.backgroundColor = [UIColor colorWithRed:r green:g blue:b alpha:1.0];
+    HMXNavigationController *nav = [[HMXNavigationController alloc] initWithRootViewController:vc];
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:imageName];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImageName];
+    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
     [self addChildViewController:nav];
 }
-
-
-
-
 
 @end

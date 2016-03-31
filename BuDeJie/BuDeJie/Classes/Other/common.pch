@@ -10,16 +10,16 @@
 #define common_pch
 
 #import "UIView+Frame.h"
-
+#import "UIBarButtonItem+Extension.h"
 #ifdef DEBUG
 
 #define HMXLog(...) NSLog(__VA_ARGS__)
-
-#elif 
-
-#define HMXLog(...) 
-
+#elif
+#define HMXLog(...)
 #endif
 
+#define globleColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define globleBg globleColor(223, 223, 223)
 
 #endif /* common_pch */

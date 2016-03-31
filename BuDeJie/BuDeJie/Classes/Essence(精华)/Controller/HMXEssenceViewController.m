@@ -7,7 +7,7 @@
 //
 
 #import "HMXEssenceViewController.h"
-
+#import "TestViewController.h"
 @interface HMXEssenceViewController ()
 
 @end
@@ -17,21 +17,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //设置标题
-    self.navigationItem.title = @"百思不得姐";
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
     //设置左边的按钮
-    UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [leftBtn setBackgroundImage:[UIImage imageNamed:@"MainTagSubIcon"] forState:UIControlStateNormal];
-    [leftBtn setBackgroundImage:[UIImage imageNamed:@"MainTagSubIconClick"] forState:UIControlStateHighlighted];
-    [leftBtn sizeToFit];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage :@"MainTagSubIcon" heighLightImage:@"MainTagSubIconClick" target:self action:@selector(tagClick:)];
+    self.view.backgroundColor = globleBg;
     
-    [leftBtn addTarget:self action:@selector(tagClick:) forControlEvents:UIControlEventTouchUpInside];
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
 }
 
 -(void)tagClick:(UIButton *)btn
 {
     HMXLog(@"左边的按扭被点击了");
 }
+
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    TestViewController *test = [[TestViewController alloc] init];
+    test.view.backgroundColor = [UIColor redColor];
+    [self.navigationController pushViewController:test animated:YES];
+}
+
 
 @end
