@@ -52,7 +52,7 @@
 -(void)setHeight:(CGFloat)height
 {
     CGRect frame = self.frame;
-    frame.size.width = height;
+    frame.size.height = height;
     self.frame = frame;
 }
 -(CGFloat)height
@@ -72,4 +72,16 @@
     return self.frame.size;
 }
 
+/************* centerX ****************/
+-(void)setCenterX:(CGFloat)centerX
+{
+    CGPoint center = self.center;
+    center.x = centerX;
+    self.center = center;
+}
+
+-(CGFloat)centerX
+{
+    return self.center.x;
+}
 @end

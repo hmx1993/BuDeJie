@@ -46,14 +46,22 @@
     CGFloat y = 0;
     NSInteger index = 0;
    
-    for (UIView *btn in self.subviews) {
+    for (UIControl *btn in self.subviews) {
         if ([btn isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
             //改变尺寸
             //如果按钮的角标大于1,就让它显示往后面一个位置显示,给发布按钮留出位置来
             btn.frame = CGRectMake(width * ((index > 1)?(index + 1):index), y, width, height);
             index++;
+            
+            //监听UITabBarButton的点击
+            [btn addTarget:self action:@selector(tabBarButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         }
     }
+}
+//当UITabbarButton被点击之后调用
+-(void)tabBarButtonClick:(UIControl *)tabBarButton
+{
+    HMXLog(@"tabBarButtonClick");
 }
 
 @end

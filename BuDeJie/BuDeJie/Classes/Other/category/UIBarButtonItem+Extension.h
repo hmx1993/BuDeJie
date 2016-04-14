@@ -11,5 +11,5 @@
 @interface UIBarButtonItem (Extension)
 
 +(instancetype)itemWithImage:(NSString *)image heighLightImage:(NSString *)heighLightImage target:(id)target action:(SEL)action;
-
++(instancetype)itemWithImage:(NSString *)image selectedImage:(NSString *)selectedImage target:(id)target action:(SEL)action;
 @end

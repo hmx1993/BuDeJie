@@ -1,0 +1,36 @@
+//
+//  common.pch
+//  BuDeJie
+//
+//  Created by hemengxiang on 16/3/27.
+//  Copyright © 2016年 hemengxiang. All rights reserved.
+//
+
+#ifndef BuDeJie_pch
+#define BuDeJie_pch
+
+#define iphone6P (HMXScreenH == 736)
+#define iphone6 (HMXScreenH == 667)
+#define iphone5 (HMXScreenH == 568)
+#define iphone4 (HMXScreenH == 480)
+#define HMXScreenH [UIScreen mainScreen].bounds.size.height
+#define HMXScreenW [UIScreen mainScreen].bounds.size.width
+
+#define HMXAFNWriteToPlist(filename)  [responseObject writeToFile: [NSString stringWithFormat:@"/Users/hemengxiang/Desktop/%@.plist",@#filename] atomically:YES];
+
+
+#import "UIView+Frame.h"
+#import "UIImage+CircleImage.h"
+#import "UIBarButtonItem+Extension.h"
+#import "HMXConst.h"
+
+#ifdef DEBUG
+#define HMXLog(...) NSLog(__VA_ARGS__)
+#elif
+#define HMXLog(...)
+#endif
+
+#define globleColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define globleBg globleColor(223, 223, 223)
+
+#endif

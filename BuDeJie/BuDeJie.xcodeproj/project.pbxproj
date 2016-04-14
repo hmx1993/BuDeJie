@@ -7,13 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55228C461CB4623C008CE422 /* HMXSubTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55228C451CB4623C008CE422 /* HMXSubTagViewController.m */; };
+		55228C491CB469B9008CE422 /* HMXSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 55228C481CB469B9008CE422 /* HMXSubTagItem.m */; };
+		55228C4D1CB46B9E008CE422 /* HMXSubTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55228C4B1CB46B9E008CE422 /* HMXSubTagCell.m */; };
+		55228C4E1CB46B9E008CE422 /* HMXSubTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55228C4C1CB46B9E008CE422 /* HMXSubTagCell.xib */; };
+		55228C511CB47AE8008CE422 /* UIImage+CircleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 55228C501CB47AE8008CE422 /* UIImage+CircleImage.m */; };
+		55228C5A1CB4843F008CE422 /* HMXLoginRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55228C581CB4843F008CE422 /* HMXLoginRegisterController.m */; };
+		55228C5B1CB4843F008CE422 /* HMXLoginRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55228C591CB4843F008CE422 /* HMXLoginRegisterController.xib */; };
+		553848E91CB5923000F1ACA5 /* HMXFastLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 553848E81CB5923000F1ACA5 /* HMXFastLogin.m */; };
+		553848EB1CB5923C00F1ACA5 /* HMXFastLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 553848EA1CB5923C00F1ACA5 /* HMXFastLogin.xib */; };
+		553848EE1CB5972000F1ACA5 /* HMXFastLoginBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 553848ED1CB5972000F1ACA5 /* HMXFastLoginBtn.m */; };
+		553848F11CB59D7100F1ACA5 /* HMXLoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 553848F01CB59D7100F1ACA5 /* HMXLoginTextField.m */; };
+		553848F41CB5B1FC00F1ACA5 /* UITextField+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 553848F31CB5B1FC00F1ACA5 /* UITextField+Placeholder.m */; };
+		553848F61CB5BD6600F1ACA5 /* HMXMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 553848F51CB5BD6600F1ACA5 /* HMXMeViewController.storyboard */; };
+		553848FA1CB5C33A00F1ACA5 /* HMXSquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 553848F81CB5C33A00F1ACA5 /* HMXSquareCell.m */; };
+		553848FB1CB5C33A00F1ACA5 /* HMXSquareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 553848F91CB5C33A00F1ACA5 /* HMXSquareCell.xib */; };
+		553848FE1CB5CB0400F1ACA5 /* HMXSqaureItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 553848FD1CB5CB0400F1ACA5 /* HMXSqaureItem.m */; };
+		555F401E1CB9138F00716929 /* HMXAllController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F401D1CB9138E00716929 /* HMXAllController.m */; };
+		555F40211CB913C100716929 /* HMXVedioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F40201CB913C100716929 /* HMXVedioController.m */; };
+		555F40241CB913D700716929 /* HMXPictureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F40231CB913D700716929 /* HMXPictureController.m */; };
+		555F40271CB913E200716929 /* HMXWordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F40261CB913E200716929 /* HMXWordController.m */; };
+		555F402A1CB913F600716929 /* HMXVoiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F40291CB913F600716929 /* HMXVoiceController.m */; };
+		555F40301CB9259E00716929 /* HMXConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F402F1CB9259E00716929 /* HMXConst.m */; };
+		555F40331CB9333300716929 /* HMXTitlesButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F40321CB9333300716929 /* HMXTitlesButton.m */; };
 		557774441C94037D00AA37D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557774431C94037D00AA37D5 /* Assets.xcassets */; };
 		5577746B1C9449CD00AA37D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 557774651C9449CD00AA37D5 /* AppDelegate.m */; };
 		5577746C1C9449CD00AA37D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 557774661C9449CD00AA37D5 /* main.m */; };
 		5577746F1C944DB100AA37D5 /* HMXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5577746E1C944DB100AA37D5 /* HMXTabBarController.m */; };
+		557C57D01CB6077F00D2B597 /* HMXWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 557C57CF1CB6077F00D2B597 /* HMXWebViewController.xib */; };
+		557C57D91CB6419E00D2B597 /* BuDeJieFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C57D81CB6419E00D2B597 /* BuDeJieFileManager.m */; };
 		558B2B841CA8B6DC005D19E2 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 558B2B811CA8B6DC005D19E2 /* UIBarButtonItem+Extension.m */; };
 		558B2B851CA8B6DC005D19E2 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 558B2B831CA8B6DC005D19E2 /* UIView+Frame.m */; };
+		5593E1371CB60184008B8E54 /* HMXWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5593E1361CB60184008B8E54 /* HMXWebViewController.m */; };
+		55963D1A1CB4425A007C359E /* HMXADItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 55963D191CB4425A007C359E /* HMXADItem.m */; };
+		559768911CAE37880046D2D2 /* HMXRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5597688F1CAE37880046D2D2 /* HMXRecommendViewController.m */; };
+		559768921CAE37880046D2D2 /* HMXRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 559768901CAE37880046D2D2 /* HMXRecommendViewController.xib */; };
+		559768951CAE3D6C0046D2D2 /* CategoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 559768941CAE3D6C0046D2D2 /* CategoryItem.m */; };
+		5597689F1CAE5CD80046D2D2 /* HMXSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5597689E1CAE5CD80046D2D2 /* HMXSettingViewController.m */; };
+		559768A71CAEBD560046D2D2 /* HMXADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 559768A51CAEBD560046D2D2 /* HMXADViewController.m */; };
+		559768A81CAEBD560046D2D2 /* HMXADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 559768A61CAEBD560046D2D2 /* HMXADViewController.xib */; };
+		559768B11CAEBF9D0046D2D2 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 559768AA1CAEBF9D0046D2D2 /* LaunchImage-568h@2x.png */; };
+		559768B21CAEBF9D0046D2D2 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 559768AB1CAEBF9D0046D2D2 /* LaunchImage-700-568h@2x.png */; };
+		559768B31CAEBF9D0046D2D2 /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 559768AC1CAEBF9D0046D2D2 /* LaunchImage-700@2x.png */; };
+		559768B41CAEBF9D0046D2D2 /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 559768AD1CAEBF9D0046D2D2 /* LaunchImage-800-667h@2x.png */; };
+		559768B51CAEBF9D0046D2D2 /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 559768AE1CAEBF9D0046D2D2 /* LaunchImage-800-Portrait-736h@3x.png */; };
+		559768B61CAEBF9D0046D2D2 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 559768AF1CAEBF9D0046D2D2 /* LaunchImage.png */; };
+		559768B71CAEBF9D0046D2D2 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 559768B01CAEBF9D0046D2D2 /* LaunchImage@2x.png */; };
+		55A509F81CB52791001FA32D /* HMXLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A509F71CB52791001FA32D /* HMXLoginRegisterView.m */; };
+		55A509FA1CB528B6001FA32D /* HMXLoginRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55A509F91CB528B6001FA32D /* HMXLoginRegisterView.xib */; };
 		55A564151CAD337D002ED684 /* HMXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A564141CAD337D002ED684 /* HMXNavigationController.m */; };
+		55C3BE771CBD0C0600D07E4C /* HMXTipicsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C3BE761CBD0C0600D07E4C /* HMXTipicsItem.m */; };
 		55C87F671CAD566700C2B361 /* HMXFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C87F661CAD566700C2B361 /* HMXFriendTrendViewController.xib */; };
 		55CD6D671CA81989002E7187 /* HMXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CD6D661CA81989002E7187 /* HMXTabBar.m */; };
 		55DC53081C945C5300FE4F95 /* HMXEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DC53071C945C5300FE4F95 /* HMXEssenceViewController.m */; };
@@ -26,6 +69,47 @@
 
 /* Begin PBXFileReference section */
 		2ACBE893D41F859ADA9A8740 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		55228C441CB4623C008CE422 /* HMXSubTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXSubTagViewController.h; sourceTree = "<group>"; };
+		55228C451CB4623C008CE422 /* HMXSubTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXSubTagViewController.m; sourceTree = "<group>"; };
+		55228C471CB469B9008CE422 /* HMXSubTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXSubTagItem.h; sourceTree = "<group>"; };
+		55228C481CB469B9008CE422 /* HMXSubTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXSubTagItem.m; sourceTree = "<group>"; };
+		55228C4A1CB46B9E008CE422 /* HMXSubTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXSubTagCell.h; sourceTree = "<group>"; };
+		55228C4B1CB46B9E008CE422 /* HMXSubTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXSubTagCell.m; sourceTree = "<group>"; };
+		55228C4C1CB46B9E008CE422 /* HMXSubTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXSubTagCell.xib; sourceTree = "<group>"; };
+		55228C4F1CB47AE8008CE422 /* UIImage+CircleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CircleImage.h"; sourceTree = "<group>"; };
+		55228C501CB47AE8008CE422 /* UIImage+CircleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CircleImage.m"; sourceTree = "<group>"; };
+		55228C571CB4843F008CE422 /* HMXLoginRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXLoginRegisterController.h; sourceTree = "<group>"; };
+		55228C581CB4843F008CE422 /* HMXLoginRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXLoginRegisterController.m; sourceTree = "<group>"; };
+		55228C591CB4843F008CE422 /* HMXLoginRegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXLoginRegisterController.xib; sourceTree = "<group>"; };
+		553848E71CB5923000F1ACA5 /* HMXFastLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXFastLogin.h; sourceTree = "<group>"; };
+		553848E81CB5923000F1ACA5 /* HMXFastLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXFastLogin.m; sourceTree = "<group>"; };
+		553848EA1CB5923C00F1ACA5 /* HMXFastLogin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXFastLogin.xib; sourceTree = "<group>"; };
+		553848EC1CB5972000F1ACA5 /* HMXFastLoginBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXFastLoginBtn.h; sourceTree = "<group>"; };
+		553848ED1CB5972000F1ACA5 /* HMXFastLoginBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXFastLoginBtn.m; sourceTree = "<group>"; };
+		553848EF1CB59D7100F1ACA5 /* HMXLoginTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXLoginTextField.h; sourceTree = "<group>"; };
+		553848F01CB59D7100F1ACA5 /* HMXLoginTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXLoginTextField.m; sourceTree = "<group>"; };
+		553848F21CB5B1FC00F1ACA5 /* UITextField+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Placeholder.h"; sourceTree = "<group>"; };
+		553848F31CB5B1FC00F1ACA5 /* UITextField+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Placeholder.m"; sourceTree = "<group>"; };
+		553848F51CB5BD6600F1ACA5 /* HMXMeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HMXMeViewController.storyboard; sourceTree = "<group>"; };
+		553848F71CB5C33A00F1ACA5 /* HMXSquareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXSquareCell.h; sourceTree = "<group>"; };
+		553848F81CB5C33A00F1ACA5 /* HMXSquareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXSquareCell.m; sourceTree = "<group>"; };
+		553848F91CB5C33A00F1ACA5 /* HMXSquareCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXSquareCell.xib; sourceTree = "<group>"; };
+		553848FC1CB5CB0400F1ACA5 /* HMXSqaureItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXSqaureItem.h; sourceTree = "<group>"; };
+		553848FD1CB5CB0400F1ACA5 /* HMXSqaureItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXSqaureItem.m; sourceTree = "<group>"; };
+		555F401C1CB9138E00716929 /* HMXAllController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXAllController.h; sourceTree = "<group>"; };
+		555F401D1CB9138E00716929 /* HMXAllController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXAllController.m; sourceTree = "<group>"; };
+		555F401F1CB913C100716929 /* HMXVedioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXVedioController.h; sourceTree = "<group>"; };
+		555F40201CB913C100716929 /* HMXVedioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXVedioController.m; sourceTree = "<group>"; };
+		555F40221CB913D700716929 /* HMXPictureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXPictureController.h; sourceTree = "<group>"; };
+		555F40231CB913D700716929 /* HMXPictureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXPictureController.m; sourceTree = "<group>"; };
+		555F40251CB913E200716929 /* HMXWordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXWordController.h; sourceTree = "<group>"; };
+		555F40261CB913E200716929 /* HMXWordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXWordController.m; sourceTree = "<group>"; };
+		555F40281CB913F600716929 /* HMXVoiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXVoiceController.h; sourceTree = "<group>"; };
+		555F40291CB913F600716929 /* HMXVoiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXVoiceController.m; sourceTree = "<group>"; };
+		555F402E1CB9259E00716929 /* HMXConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXConst.h; sourceTree = "<group>"; };
+		555F402F1CB9259E00716929 /* HMXConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXConst.m; sourceTree = "<group>"; };
+		555F40311CB9333300716929 /* HMXTitlesButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXTitlesButton.h; sourceTree = "<group>"; };
+		555F40321CB9333300716929 /* HMXTitlesButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXTitlesButton.m; sourceTree = "<group>"; };
 		557774341C94037D00AA37D5 /* BuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		557774431C94037D00AA37D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		557774481C94037D00AA37D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,16 +118,45 @@
 		557774661C9449CD00AA37D5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5577746D1C944DB100AA37D5 /* HMXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXTabBarController.h; sourceTree = "<group>"; };
 		5577746E1C944DB100AA37D5 /* HMXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXTabBarController.m; sourceTree = "<group>"; };
+		557C57CF1CB6077F00D2B597 /* HMXWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXWebViewController.xib; sourceTree = "<group>"; };
+		557C57D71CB6419E00D2B597 /* BuDeJieFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuDeJieFileManager.h; sourceTree = "<group>"; };
+		557C57D81CB6419E00D2B597 /* BuDeJieFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuDeJieFileManager.m; sourceTree = "<group>"; };
 		558B2B801CA8B6DC005D19E2 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		558B2B811CA8B6DC005D19E2 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		558B2B821CA8B6DC005D19E2 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		558B2B831CA8B6DC005D19E2 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		5593E1351CB60184008B8E54 /* HMXWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXWebViewController.h; sourceTree = "<group>"; };
+		5593E1361CB60184008B8E54 /* HMXWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXWebViewController.m; sourceTree = "<group>"; };
+		55963D181CB4425A007C359E /* HMXADItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXADItem.h; sourceTree = "<group>"; };
+		55963D191CB4425A007C359E /* HMXADItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXADItem.m; sourceTree = "<group>"; };
+		5597688E1CAE37880046D2D2 /* HMXRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXRecommendViewController.h; sourceTree = "<group>"; };
+		5597688F1CAE37880046D2D2 /* HMXRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXRecommendViewController.m; sourceTree = "<group>"; };
+		559768901CAE37880046D2D2 /* HMXRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXRecommendViewController.xib; sourceTree = "<group>"; };
+		559768931CAE3D6C0046D2D2 /* CategoryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryItem.h; sourceTree = "<group>"; };
+		559768941CAE3D6C0046D2D2 /* CategoryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryItem.m; sourceTree = "<group>"; };
+		5597689D1CAE5CD80046D2D2 /* HMXSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXSettingViewController.h; sourceTree = "<group>"; };
+		5597689E1CAE5CD80046D2D2 /* HMXSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXSettingViewController.m; sourceTree = "<group>"; };
+		559768A41CAEBD560046D2D2 /* HMXADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXADViewController.h; sourceTree = "<group>"; };
+		559768A51CAEBD560046D2D2 /* HMXADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXADViewController.m; sourceTree = "<group>"; };
+		559768A61CAEBD560046D2D2 /* HMXADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXADViewController.xib; sourceTree = "<group>"; };
+		559768AA1CAEBF9D0046D2D2 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		559768AB1CAEBF9D0046D2D2 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
+		559768AC1CAEBF9D0046D2D2 /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
+		559768AD1CAEBF9D0046D2D2 /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
+		559768AE1CAEBF9D0046D2D2 /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		559768AF1CAEBF9D0046D2D2 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		559768B01CAEBF9D0046D2D2 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
+		55A509F61CB52791001FA32D /* HMXLoginRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXLoginRegisterView.h; sourceTree = "<group>"; };
+		55A509F71CB52791001FA32D /* HMXLoginRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXLoginRegisterView.m; sourceTree = "<group>"; };
+		55A509F91CB528B6001FA32D /* HMXLoginRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXLoginRegisterView.xib; sourceTree = "<group>"; };
 		55A564131CAD337D002ED684 /* HMXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXNavigationController.h; sourceTree = "<group>"; };
 		55A564141CAD337D002ED684 /* HMXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXNavigationController.m; sourceTree = "<group>"; };
+		55C3BE751CBD0C0600D07E4C /* HMXTipicsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXTipicsItem.h; sourceTree = "<group>"; };
+		55C3BE761CBD0C0600D07E4C /* HMXTipicsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXTipicsItem.m; sourceTree = "<group>"; };
 		55C87F661CAD566700C2B361 /* HMXFriendTrendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXFriendTrendViewController.xib; sourceTree = "<group>"; };
 		55CD6D651CA81989002E7187 /* HMXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXTabBar.h; sourceTree = "<group>"; };
 		55CD6D661CA81989002E7187 /* HMXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXTabBar.m; sourceTree = "<group>"; };
-		55CD6D6B1CA8242C002E7187 /* common.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.pch; sourceTree = "<group>"; };
+		55CD6D6B1CA8242C002E7187 /* BuDeJie.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuDeJie.pch; sourceTree = "<group>"; };
 		55DC53061C945C5300FE4F95 /* HMXEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXEssenceViewController.h; sourceTree = "<group>"; };
 		55DC53071C945C5300FE4F95 /* HMXEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXEssenceViewController.m; sourceTree = "<group>"; };
 		55DC53091C945C7F00FE4F95 /* HMXFriendTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXFriendTrendViewController.h; sourceTree = "<group>"; };
@@ -102,6 +215,7 @@
 		557774371C94037D00AA37D5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				559768A91CAEBF9D0046D2D2 /* 启动图片 */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -109,6 +223,9 @@
 		5577744E1C9449CD00AA37D5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				557C57D21CB6414900D2B597 /* Tools(业务类) */,
+				559768A01CAEA6870046D2D2 /* AD(广告) */,
+				559768991CAE5CB30046D2D2 /* Setting(设置) */,
 				5577744F1C9449CD00AA37D5 /* Essence(精华) */,
 				557774531C9449CD00AA37D5 /* FriendTrend(关注) */,
 				557774571C9449CD00AA37D5 /* Main */,
@@ -135,6 +252,16 @@
 			children = (
 				55DC53061C945C5300FE4F95 /* HMXEssenceViewController.h */,
 				55DC53071C945C5300FE4F95 /* HMXEssenceViewController.m */,
+				555F401C1CB9138E00716929 /* HMXAllController.h */,
+				555F401D1CB9138E00716929 /* HMXAllController.m */,
+				555F401F1CB913C100716929 /* HMXVedioController.h */,
+				555F40201CB913C100716929 /* HMXVedioController.m */,
+				555F40221CB913D700716929 /* HMXPictureController.h */,
+				555F40231CB913D700716929 /* HMXPictureController.m */,
+				555F40251CB913E200716929 /* HMXWordController.h */,
+				555F40261CB913E200716929 /* HMXWordController.m */,
+				555F40281CB913F600716929 /* HMXVoiceController.h */,
+				555F40291CB913F600716929 /* HMXVoiceController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -142,6 +269,8 @@
 		557774511C9449CD00AA37D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				55C3BE751CBD0C0600D07E4C /* HMXTipicsItem.h */,
+				55C3BE761CBD0C0600D07E4C /* HMXTipicsItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -149,6 +278,8 @@
 		557774521C9449CD00AA37D5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				555F40311CB9333300716929 /* HMXTitlesButton.h */,
+				555F40321CB9333300716929 /* HMXTitlesButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,9 +297,15 @@
 		557774541C9449CD00AA37D5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5597688E1CAE37880046D2D2 /* HMXRecommendViewController.h */,
+				5597688F1CAE37880046D2D2 /* HMXRecommendViewController.m */,
+				559768901CAE37880046D2D2 /* HMXRecommendViewController.xib */,
 				55DC53091C945C7F00FE4F95 /* HMXFriendTrendViewController.h */,
 				55DC530A1C945C7F00FE4F95 /* HMXFriendTrendViewController.m */,
 				55C87F661CAD566700C2B361 /* HMXFriendTrendViewController.xib */,
+				55228C571CB4843F008CE422 /* HMXLoginRegisterController.h */,
+				55228C581CB4843F008CE422 /* HMXLoginRegisterController.m */,
+				55228C591CB4843F008CE422 /* HMXLoginRegisterController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -176,6 +313,8 @@
 		557774551C9449CD00AA37D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				559768931CAE3D6C0046D2D2 /* CategoryItem.h */,
+				559768941CAE3D6C0046D2D2 /* CategoryItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,6 +322,16 @@
 		557774561C9449CD00AA37D5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				55A509F61CB52791001FA32D /* HMXLoginRegisterView.h */,
+				55A509F71CB52791001FA32D /* HMXLoginRegisterView.m */,
+				55A509F91CB528B6001FA32D /* HMXLoginRegisterView.xib */,
+				553848E71CB5923000F1ACA5 /* HMXFastLogin.h */,
+				553848E81CB5923000F1ACA5 /* HMXFastLogin.m */,
+				553848EA1CB5923C00F1ACA5 /* HMXFastLogin.xib */,
+				553848EC1CB5972000F1ACA5 /* HMXFastLoginBtn.h */,
+				553848ED1CB5972000F1ACA5 /* HMXFastLoginBtn.m */,
+				553848EF1CB59D7100F1ACA5 /* HMXLoginTextField.h */,
+				553848F01CB59D7100F1ACA5 /* HMXLoginTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,6 +388,10 @@
 			children = (
 				55DC530C1C945C9400FE4F95 /* HMXMeViewController.h */,
 				55DC530D1C945C9400FE4F95 /* HMXMeViewController.m */,
+				553848F51CB5BD6600F1ACA5 /* HMXMeViewController.storyboard */,
+				5593E1351CB60184008B8E54 /* HMXWebViewController.h */,
+				5593E1361CB60184008B8E54 /* HMXWebViewController.m */,
+				557C57CF1CB6077F00D2B597 /* HMXWebViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -246,6 +399,8 @@
 		5577745D1C9449CD00AA37D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				553848FC1CB5CB0400F1ACA5 /* HMXSqaureItem.h */,
+				553848FD1CB5CB0400F1ACA5 /* HMXSqaureItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -253,6 +408,9 @@
 		5577745E1C9449CD00AA37D5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				553848F71CB5C33A00F1ACA5 /* HMXSquareCell.h */,
+				553848F81CB5C33A00F1ACA5 /* HMXSquareCell.m */,
+				553848F91CB5C33A00F1ACA5 /* HMXSquareCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -272,6 +430,8 @@
 			children = (
 				55DC530F1C945CED00FE4F95 /* HMXNewViewController.h */,
 				55DC53101C945CED00FE4F95 /* HMXNewViewController.m */,
+				55228C441CB4623C008CE422 /* HMXSubTagViewController.h */,
+				55228C451CB4623C008CE422 /* HMXSubTagViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -279,6 +439,8 @@
 		557774611C9449CD00AA37D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				55228C471CB469B9008CE422 /* HMXSubTagItem.h */,
+				55228C481CB469B9008CE422 /* HMXSubTagItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -286,6 +448,9 @@
 		557774621C9449CD00AA37D5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				55228C4A1CB46B9E008CE422 /* HMXSubTagCell.h */,
+				55228C4B1CB46B9E008CE422 /* HMXSubTagCell.m */,
+				55228C4C1CB46B9E008CE422 /* HMXSubTagCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,8 +460,10 @@
 			children = (
 				557774641C9449CD00AA37D5 /* AppDelegate.h */,
 				557774651C9449CD00AA37D5 /* AppDelegate.m */,
+				555F402E1CB9259E00716929 /* HMXConst.h */,
+				555F402F1CB9259E00716929 /* HMXConst.m */,
 				557774661C9449CD00AA37D5 /* main.m */,
-				55CD6D6B1CA8242C002E7187 /* common.pch */,
+				55CD6D6B1CA8242C002E7187 /* BuDeJie.pch */,
 				558B2B7F1CA8B6DC005D19E2 /* category */,
 			);
 			path = Other;
@@ -335,6 +502,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		557C57D21CB6414900D2B597 /* Tools(业务类) */ = {
+			isa = PBXGroup;
+			children = (
+				557C57D31CB6414900D2B597 /* HMXFileManager */,
+			);
+			path = "Tools(业务类)";
+			sourceTree = "<group>";
+		};
+		557C57D31CB6414900D2B597 /* HMXFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				557C57D71CB6419E00D2B597 /* BuDeJieFileManager.h */,
+				557C57D81CB6419E00D2B597 /* BuDeJieFileManager.m */,
+			);
+			path = HMXFileManager;
+			sourceTree = "<group>";
+		};
 		558B2B7F1CA8B6DC005D19E2 /* category */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,8 +526,95 @@
 				558B2B811CA8B6DC005D19E2 /* UIBarButtonItem+Extension.m */,
 				558B2B821CA8B6DC005D19E2 /* UIView+Frame.h */,
 				558B2B831CA8B6DC005D19E2 /* UIView+Frame.m */,
+				55228C4F1CB47AE8008CE422 /* UIImage+CircleImage.h */,
+				55228C501CB47AE8008CE422 /* UIImage+CircleImage.m */,
+				553848F21CB5B1FC00F1ACA5 /* UITextField+Placeholder.h */,
+				553848F31CB5B1FC00F1ACA5 /* UITextField+Placeholder.m */,
 			);
 			path = category;
+			sourceTree = "<group>";
+		};
+		559768991CAE5CB30046D2D2 /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				5597689A1CAE5CB30046D2D2 /* Controller */,
+				5597689B1CAE5CB30046D2D2 /* Model */,
+				5597689C1CAE5CB30046D2D2 /* View */,
+			);
+			path = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		5597689A1CAE5CB30046D2D2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5597689D1CAE5CD80046D2D2 /* HMXSettingViewController.h */,
+				5597689E1CAE5CD80046D2D2 /* HMXSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5597689B1CAE5CB30046D2D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5597689C1CAE5CB30046D2D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		559768A01CAEA6870046D2D2 /* AD(广告) */ = {
+			isa = PBXGroup;
+			children = (
+				559768A11CAEA6870046D2D2 /* Controller */,
+				559768A21CAEA6870046D2D2 /* Model */,
+				559768A31CAEA6870046D2D2 /* View */,
+			);
+			path = "AD(广告)";
+			sourceTree = "<group>";
+		};
+		559768A11CAEA6870046D2D2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				559768A41CAEBD560046D2D2 /* HMXADViewController.h */,
+				559768A51CAEBD560046D2D2 /* HMXADViewController.m */,
+				559768A61CAEBD560046D2D2 /* HMXADViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		559768A21CAEA6870046D2D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55963D181CB4425A007C359E /* HMXADItem.h */,
+				55963D191CB4425A007C359E /* HMXADItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		559768A31CAEA6870046D2D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		559768A91CAEBF9D0046D2D2 /* 启动图片 */ = {
+			isa = PBXGroup;
+			children = (
+				559768AA1CAEBF9D0046D2D2 /* LaunchImage-568h@2x.png */,
+				559768AB1CAEBF9D0046D2D2 /* LaunchImage-700-568h@2x.png */,
+				559768AC1CAEBF9D0046D2D2 /* LaunchImage-700@2x.png */,
+				559768AD1CAEBF9D0046D2D2 /* LaunchImage-800-667h@2x.png */,
+				559768AE1CAEBF9D0046D2D2 /* LaunchImage-800-Portrait-736h@3x.png */,
+				559768AF1CAEBF9D0046D2D2 /* LaunchImage.png */,
+				559768B01CAEBF9D0046D2D2 /* LaunchImage@2x.png */,
+			);
+			path = "启动图片";
 			sourceTree = "<group>";
 		};
 		9A163915548933613477291B /* Pods */ = {
@@ -424,8 +695,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				559768921CAE37880046D2D2 /* HMXRecommendViewController.xib in Resources */,
+				553848FB1CB5C33A00F1ACA5 /* HMXSquareCell.xib in Resources */,
+				559768B51CAEBF9D0046D2D2 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				559768A81CAEBD560046D2D2 /* HMXADViewController.xib in Resources */,
+				553848F61CB5BD6600F1ACA5 /* HMXMeViewController.storyboard in Resources */,
+				557C57D01CB6077F00D2B597 /* HMXWebViewController.xib in Resources */,
+				559768B71CAEBF9D0046D2D2 /* LaunchImage@2x.png in Resources */,
+				559768B21CAEBF9D0046D2D2 /* LaunchImage-700-568h@2x.png in Resources */,
+				559768B41CAEBF9D0046D2D2 /* LaunchImage-800-667h@2x.png in Resources */,
+				559768B11CAEBF9D0046D2D2 /* LaunchImage-568h@2x.png in Resources */,
+				559768B61CAEBF9D0046D2D2 /* LaunchImage.png in Resources */,
 				55C87F671CAD566700C2B361 /* HMXFriendTrendViewController.xib in Resources */,
+				55228C5B1CB4843F008CE422 /* HMXLoginRegisterController.xib in Resources */,
+				55228C4E1CB46B9E008CE422 /* HMXSubTagCell.xib in Resources */,
+				553848EB1CB5923C00F1ACA5 /* HMXFastLogin.xib in Resources */,
+				559768B31CAEBF9D0046D2D2 /* LaunchImage-700@2x.png in Resources */,
 				557774441C94037D00AA37D5 /* Assets.xcassets in Resources */,
+				55A509FA1CB528B6001FA32D /* HMXLoginRegisterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,18 +771,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55228C491CB469B9008CE422 /* HMXSubTagItem.m in Sources */,
+				55963D1A1CB4425A007C359E /* HMXADItem.m in Sources */,
 				55DC53171C945D4700FE4F95 /* HMXPublishViewController.m in Sources */,
+				55A509F81CB52791001FA32D /* HMXLoginRegisterView.m in Sources */,
+				553848EE1CB5972000F1ACA5 /* HMXFastLoginBtn.m in Sources */,
+				559768A71CAEBD560046D2D2 /* HMXADViewController.m in Sources */,
+				5597689F1CAE5CD80046D2D2 /* HMXSettingViewController.m in Sources */,
 				55DC530E1C945C9400FE4F95 /* HMXMeViewController.m in Sources */,
+				553848FA1CB5C33A00F1ACA5 /* HMXSquareCell.m in Sources */,
 				55DC53111C945CED00FE4F95 /* HMXNewViewController.m in Sources */,
+				555F40271CB913E200716929 /* HMXWordController.m in Sources */,
+				555F40211CB913C100716929 /* HMXVedioController.m in Sources */,
+				555F40331CB9333300716929 /* HMXTitlesButton.m in Sources */,
 				55DC530B1C945C7F00FE4F95 /* HMXFriendTrendViewController.m in Sources */,
 				558B2B841CA8B6DC005D19E2 /* UIBarButtonItem+Extension.m in Sources */,
 				5577746C1C9449CD00AA37D5 /* main.m in Sources */,
+				555F40241CB913D700716929 /* HMXPictureController.m in Sources */,
 				5577746F1C944DB100AA37D5 /* HMXTabBarController.m in Sources */,
+				553848F11CB59D7100F1ACA5 /* HMXLoginTextField.m in Sources */,
+				55C3BE771CBD0C0600D07E4C /* HMXTipicsItem.m in Sources */,
 				55CD6D671CA81989002E7187 /* HMXTabBar.m in Sources */,
+				553848F41CB5B1FC00F1ACA5 /* UITextField+Placeholder.m in Sources */,
+				553848E91CB5923000F1ACA5 /* HMXFastLogin.m in Sources */,
 				5577746B1C9449CD00AA37D5 /* AppDelegate.m in Sources */,
+				55228C461CB4623C008CE422 /* HMXSubTagViewController.m in Sources */,
 				55DC53081C945C5300FE4F95 /* HMXEssenceViewController.m in Sources */,
+				559768951CAE3D6C0046D2D2 /* CategoryItem.m in Sources */,
+				555F40301CB9259E00716929 /* HMXConst.m in Sources */,
+				559768911CAE37880046D2D2 /* HMXRecommendViewController.m in Sources */,
+				555F402A1CB913F600716929 /* HMXVoiceController.m in Sources */,
+				555F401E1CB9138F00716929 /* HMXAllController.m in Sources */,
+				55228C4D1CB46B9E008CE422 /* HMXSubTagCell.m in Sources */,
+				55228C5A1CB4843F008CE422 /* HMXLoginRegisterController.m in Sources */,
 				558B2B851CA8B6DC005D19E2 /* UIView+Frame.m in Sources */,
+				553848FE1CB5CB0400F1ACA5 /* HMXSqaureItem.m in Sources */,
 				55A564151CAD337D002ED684 /* HMXNavigationController.m in Sources */,
+				55228C511CB47AE8008CE422 /* UIImage+CircleImage.m in Sources */,
+				557C57D91CB6419E00D2B597 /* BuDeJieFileManager.m in Sources */,
+				5593E1371CB60184008B8E54 /* HMXWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,7 +905,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = BuDeJie/Classes/Other/common.pch;
+				GCC_PREFIX_HEADER = BuDeJie/Classes/Other/BuDeJie.pch;
 				INFOPLIST_FILE = BuDeJie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -610,7 +924,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = BuDeJie/Classes/Other/common.pch;
+				GCC_PREFIX_HEADER = BuDeJie/Classes/Other/BuDeJie.pch;
 				INFOPLIST_FILE = BuDeJie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

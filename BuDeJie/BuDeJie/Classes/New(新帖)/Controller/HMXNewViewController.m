@@ -7,7 +7,7 @@
 //
 
 #import "HMXNewViewController.h"
-
+#import "HMXSubTagViewController.h"
 @interface HMXNewViewController ()
 
 @end
@@ -26,7 +26,10 @@
 
 -(void)tagClick:(UIButton *)btn
 {
-    HMXLog(@"左边的按扭被点击了");
+    //跳转到订阅标签控制器
+    HMXSubTagViewController *subTag = [[HMXSubTagViewController alloc] init];
+    
+    [self.navigationController pushViewController:subTag animated:YES];
 }
 
 @end

@@ -49,6 +49,9 @@
                     <state key="highlighted" backgroundImage="friendsTrend_login_click">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="loginRegisterBtnClick:" destination="-1" eventType="touchUpInside" id="kCC-9Y-0RY"/>
+                    </connections>
                 </button>
             </subviews>
             <animations/>
@@ -62,7 +65,7 @@
                 <constraint firstItem="LqX-nP-GqN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="meg-Fm-90P"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="325.5" y="174.5"/>
+            <point key="canvasLocation" x="318.5" y="146.5"/>
         </view>
     </objects>
     <resources>

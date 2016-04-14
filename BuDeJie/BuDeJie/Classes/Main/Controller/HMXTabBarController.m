@@ -53,8 +53,8 @@
     [self setValue:[[HMXTabBar alloc] init] forKey:@"tabBar"];
     
     [self.tabBar setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
-   
 }
+
 
 //添加所有自控制器
 -(void)addAllChildController{
@@ -74,7 +74,8 @@
     [self setUpChildVC:friendTrend title:@"关注" imageName:@"tabBar_friendTrends_icon" selectedImageName:@"tabBar_friendTrends_click_icon"];
     
     //我
-    HMXMeViewController *me = [[HMXMeViewController alloc] init];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"HMXMeViewController" bundle:nil];
+    HMXMeViewController *me = [storyboard instantiateInitialViewController];
     [self setUpChildVC:me title:@"我的" imageName:@"tabBar_me_icon" selectedImageName:@"tabBar_me_click_icon"];
 }
 
@@ -82,7 +83,7 @@
 -(void)setUpChildVC:(UIViewController *)vc title:(NSString *)title imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName
 {
     
-#warning  在这个位置设置颜色,将会导致所有的控制器将会被提前创建,控制器最好是在用户第一次点击的时候被创建,因此每个控制器的颜色应该放到viewDidLoad中设置
+//在这个位置设置颜色,将会导致所有的控制器将会被提前创建,控制器最好是在用户第一次点击的时候被创建,因此每个控制器的颜色应该放到viewDidLoad中设置
 //    CGFloat r = arc4random_uniform(256) / 255.0;
 //    CGFloat g = arc4random_uniform(256) / 255.0;
 //    CGFloat b = arc4random_uniform(256) / 255.0;

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HMXWebViewController">
+            <connections>
+                <outlet property="progressView" destination="iJl-km-9xz" id="Cuu-4p-dsJ"/>
+                <outlet property="view" destination="Rjg-Mr-0hL" id="C66-zf-vgf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Rjg-Mr-0hL">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iJl-km-9xz">
+                    <rect key="frame" x="0.0" y="64" width="375" height="2"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="SfY-aT-ift"/>
+                    </constraints>
+                </progressView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iJl-km-9xz" firstAttribute="top" secondItem="Rjg-Mr-0hL" secondAttribute="top" constant="64" id="fcg-jN-ScR"/>
+                <constraint firstAttribute="trailing" secondItem="iJl-km-9xz" secondAttribute="trailing" id="l0g-At-GLR"/>
+                <constraint firstItem="iJl-km-9xz" firstAttribute="leading" secondItem="Rjg-Mr-0hL" secondAttribute="leading" id="uGn-T7-v1C"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="173.5" y="298.5"/>
+        </view>
+    </objects>
+</document>

@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "HMXTabBarController.h"
-
+#import "HMXADViewController.h"
 @interface AppDelegate ()
 
 
@@ -22,9 +22,13 @@
     //1.创建窗口
     self.window = [[UIWindow alloc] init];
     
-    //2.设置窗口的根控制器
+//    //2.设置窗口的根控制器
     HMXTabBarController *tabBarVc = [[HMXTabBarController alloc] init];
     self.window.rootViewController = tabBarVc;
+    
+    //展示广告控制器
+//    HMXADViewController *ad = [[HMXADViewController alloc] init];
+//    self.window.rootViewController = ad;
     
     //3.显示窗口
     [self.window makeKeyAndVisible];
