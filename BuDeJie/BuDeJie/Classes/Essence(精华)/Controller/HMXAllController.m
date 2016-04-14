@@ -51,6 +51,50 @@
 
     //添加刷新控件
     [self setUpRefresh];
+    
+    //监听通知
+    [self setUpNotification];
+}
+
+#pragma mark - 通知相关
+-(void)setUpNotification
+{
+    //监听TabBarButton被重复点击的通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tabBarButtonRepeatClick) name:HMXTabBarButtonRepeatClickNotification object:nil];
+    //监听TitleButton被重复点击的通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(titleButtonRepeatClick) name:HMXTitleButtonRepeatClickNotification object:nil];
+    
+}
+//当tabBarButton被重复点击了之后调用
+-(void)tabBarButtonRepeatClick
+{
+    //判断,如果当前控制器不在窗口上,那么就直接返回(排除点击其他模块的tabBarButton也会刷新)
+    if (self.tableView.window == nil) return;
+    
+    //排除当点击视频,声音等其他控制器的时候也进入刷新转态
+    if (self.tableView.scrollsToTop == NO) return;
+
+    //进入下拉刷新
+    [self headerBeginRefreshing];
+}
+
+//当titleButtonRepeatClick被重复点击了后调用
+-(void)titleButtonRepeatClick
+{
+    //判断,如果当前控制器不在窗口上,那么就直接返回(排除点击其他模块的tabBarButton也会刷新)
+    if (self.tableView.window == nil) return;
+    
+    //排除当点击视频,声音等其他控制器的时候也进入刷新转态
+    if (self.tableView.scrollsToTop == NO) return;
+    
+    //进入下拉刷新
+    [self headerBeginRefreshing];
+}
+
+//一定要记得移除通知
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - 加载帖子
@@ -335,11 +379,6 @@
     cell.detailTextLabel.text = topics.text;
     return cell;
 }
-#pragma mark - tableView的代理方法
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    //模拟,当选中某一行的时候,发送请求加载最新数据
-    [self headerBeginRefreshing];
-}
+
 
 @end

@@ -90,7 +90,7 @@
     scrollView.delegate = self;
     
     scrollView.frame = self.view.bounds;
-    scrollView.backgroundColor = [UIColor redColor];
+    scrollView.backgroundColor = [UIColor cyanColor];
     
     //设置scrollView的属性
     NSInteger childVcsCount = self.childViewControllers.count;
@@ -190,6 +190,13 @@
 #pragma mark ----监听按钮点击
 -(void)titlesBtnClick:(HMXTitlesButton *)button
 {
+    //监听按钮的重复点击
+    if(self.preSelectedButton == button)
+    {
+        //发送通知
+        [[NSNotificationCenter defaultCenter] postNotificationName:HMXTitleButtonRepeatClickNotification object:nil];
+    }
+   
     //取消上一个按钮的选中状态
     self.preSelectedButton.selected = NO;
     //让当前按钮被选中
@@ -238,8 +245,14 @@
     
     //计算当前偏移量对应的按钮角标
     NSInteger index = self.scrollView.contentOffset.x / self.scrollView.width;
+    
     //选中按钮
-    [self titlesBtnClick:[self.titlesView.subviews objectAtIndex:index]];
+    HMXTitlesButton *btn = [self.titlesView.subviews objectAtIndex:index];
+    
+    //如果上一次点击的按钮  和 这次想要点击的按钮 相同,那么直接返回(不然手松了之后回到原来的界面的情况下就相当于点击了重复点击某个按钮,这样会重新加载数据)
+    if (self.preSelectedButton == btn) return;
+    
+     [self titlesBtnClick:btn];
     
 }
 

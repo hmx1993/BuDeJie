@@ -22,3 +22,11 @@ CGFloat const HMXTabBarHeight = 49;
  *  请求URL
  */
 NSString *const HMXRequestUrl = @"http://api.budejie.com/api/api_open.php";
+/**
+ *  TabBarButton被重复点击了的通知
+ */
+NSString *const HMXTabBarButtonRepeatClickNotification = @"HMXTabBarButtonRepeatClickNotification";
+/**
+ *  TitleButton被重复点击了的通知
+ */
+NSString *const HMXTitleButtonRepeatClickNotification = @"HMXTitleButtonRepeatClickNotification";

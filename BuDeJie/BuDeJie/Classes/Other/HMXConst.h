@@ -21,3 +21,11 @@ extern CGFloat const HMXTabBarHeight;
  *  请求URL
  */
 extern NSString *const HMXRequestUrl;
+/**
+ *   TabBarButton被重复点击了的通知
+ */
+extern NSString *const HMXTabBarButtonRepeatClickNotification;
+/**
+ *   TitleButton被重复点击了的通知
+ */
+extern NSString *const HMXTitleButtonRepeatClickNotification;
