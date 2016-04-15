@@ -16,6 +16,12 @@
 		55228C511CB47AE8008CE422 /* UIImage+CircleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 55228C501CB47AE8008CE422 /* UIImage+CircleImage.m */; };
 		55228C5A1CB4843F008CE422 /* HMXLoginRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55228C581CB4843F008CE422 /* HMXLoginRegisterController.m */; };
 		55228C5B1CB4843F008CE422 /* HMXLoginRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55228C591CB4843F008CE422 /* HMXLoginRegisterController.xib */; };
+		5526D69C1CC0FAC10012E1DA /* HMXTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5526D69B1CC0FAC10012E1DA /* HMXTopicPictureView.m */; };
+		5526D69F1CC0FAE00012E1DA /* HMXTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5526D69E1CC0FAE00012E1DA /* HMXTopicVoiceView.m */; };
+		5526D6A21CC0FAF00012E1DA /* HMXTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5526D6A11CC0FAF00012E1DA /* HMXTopicVideoView.m */; };
+		5526D6A41CC0FB030012E1DA /* HMXTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5526D6A31CC0FB030012E1DA /* HMXTopicPictureView.xib */; };
+		5526D6A61CC0FB170012E1DA /* HMXTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5526D6A51CC0FB170012E1DA /* HMXTopicVoiceView.xib */; };
+		5526D6A81CC0FB210012E1DA /* HMXTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5526D6A71CC0FB210012E1DA /* HMXTopicVideoView.xib */; };
 		553848E91CB5923000F1ACA5 /* HMXFastLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 553848E81CB5923000F1ACA5 /* HMXFastLogin.m */; };
 		553848EB1CB5923C00F1ACA5 /* HMXFastLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 553848EA1CB5923C00F1ACA5 /* HMXFastLogin.xib */; };
 		553848EE1CB5972000F1ACA5 /* HMXFastLoginBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 553848ED1CB5972000F1ACA5 /* HMXFastLoginBtn.m */; };
@@ -86,6 +92,15 @@
 		55228C571CB4843F008CE422 /* HMXLoginRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXLoginRegisterController.h; sourceTree = "<group>"; };
 		55228C581CB4843F008CE422 /* HMXLoginRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXLoginRegisterController.m; sourceTree = "<group>"; };
 		55228C591CB4843F008CE422 /* HMXLoginRegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXLoginRegisterController.xib; sourceTree = "<group>"; };
+		5526D69A1CC0FAC10012E1DA /* HMXTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXTopicPictureView.h; sourceTree = "<group>"; };
+		5526D69B1CC0FAC10012E1DA /* HMXTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXTopicPictureView.m; sourceTree = "<group>"; };
+		5526D69D1CC0FAE00012E1DA /* HMXTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXTopicVoiceView.h; sourceTree = "<group>"; };
+		5526D69E1CC0FAE00012E1DA /* HMXTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXTopicVoiceView.m; sourceTree = "<group>"; };
+		5526D6A01CC0FAF00012E1DA /* HMXTopicVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXTopicVideoView.h; sourceTree = "<group>"; };
+		5526D6A11CC0FAF00012E1DA /* HMXTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXTopicVideoView.m; sourceTree = "<group>"; };
+		5526D6A31CC0FB030012E1DA /* HMXTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXTopicPictureView.xib; sourceTree = "<group>"; };
+		5526D6A51CC0FB170012E1DA /* HMXTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXTopicVoiceView.xib; sourceTree = "<group>"; };
+		5526D6A71CC0FB210012E1DA /* HMXTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXTopicVideoView.xib; sourceTree = "<group>"; };
 		553848E71CB5923000F1ACA5 /* HMXFastLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXFastLogin.h; sourceTree = "<group>"; };
 		553848E81CB5923000F1ACA5 /* HMXFastLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXFastLogin.m; sourceTree = "<group>"; };
 		553848EA1CB5923C00F1ACA5 /* HMXFastLogin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXFastLogin.xib; sourceTree = "<group>"; };
@@ -288,6 +303,15 @@
 				551B374C1CBFA9BA00D5F1AB /* HMXTopicCell.h */,
 				551B374D1CBFA9BA00D5F1AB /* HMXTopicCell.m */,
 				551B374E1CBFA9BA00D5F1AB /* HMXTopicCell.xib */,
+				5526D69A1CC0FAC10012E1DA /* HMXTopicPictureView.h */,
+				5526D69B1CC0FAC10012E1DA /* HMXTopicPictureView.m */,
+				5526D6A31CC0FB030012E1DA /* HMXTopicPictureView.xib */,
+				5526D69D1CC0FAE00012E1DA /* HMXTopicVoiceView.h */,
+				5526D69E1CC0FAE00012E1DA /* HMXTopicVoiceView.m */,
+				5526D6A51CC0FB170012E1DA /* HMXTopicVoiceView.xib */,
+				5526D6A01CC0FAF00012E1DA /* HMXTopicVideoView.h */,
+				5526D6A11CC0FAF00012E1DA /* HMXTopicVideoView.m */,
+				5526D6A71CC0FB210012E1DA /* HMXTopicVideoView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -718,7 +742,10 @@
 				55C87F671CAD566700C2B361 /* HMXFriendTrendViewController.xib in Resources */,
 				55228C5B1CB4843F008CE422 /* HMXLoginRegisterController.xib in Resources */,
 				55228C4E1CB46B9E008CE422 /* HMXSubTagCell.xib in Resources */,
+				5526D6A41CC0FB030012E1DA /* HMXTopicPictureView.xib in Resources */,
+				5526D6A61CC0FB170012E1DA /* HMXTopicVoiceView.xib in Resources */,
 				553848EB1CB5923C00F1ACA5 /* HMXFastLogin.xib in Resources */,
+				5526D6A81CC0FB210012E1DA /* HMXTopicVideoView.xib in Resources */,
 				559768B31CAEBF9D0046D2D2 /* LaunchImage-700@2x.png in Resources */,
 				557774441C94037D00AA37D5 /* Assets.xcassets in Resources */,
 				55A509FA1CB528B6001FA32D /* HMXLoginRegisterView.xib in Resources */,
@@ -784,6 +811,7 @@
 				55963D1A1CB4425A007C359E /* HMXADItem.m in Sources */,
 				55DC53171C945D4700FE4F95 /* HMXPublishViewController.m in Sources */,
 				55A509F81CB52791001FA32D /* HMXLoginRegisterView.m in Sources */,
+				5526D69C1CC0FAC10012E1DA /* HMXTopicPictureView.m in Sources */,
 				553848EE1CB5972000F1ACA5 /* HMXFastLoginBtn.m in Sources */,
 				551B374F1CBFA9BA00D5F1AB /* HMXTopicCell.m in Sources */,
 				559768A71CAEBD560046D2D2 /* HMXADViewController.m in Sources */,
@@ -801,7 +829,9 @@
 				5577746F1C944DB100AA37D5 /* HMXTabBarController.m in Sources */,
 				553848F11CB59D7100F1ACA5 /* HMXLoginTextField.m in Sources */,
 				55C3BE771CBD0C0600D07E4C /* HMXTipicsItem.m in Sources */,
+				5526D6A21CC0FAF00012E1DA /* HMXTopicVideoView.m in Sources */,
 				55CD6D671CA81989002E7187 /* HMXTabBar.m in Sources */,
+				5526D69F1CC0FAE00012E1DA /* HMXTopicVoiceView.m in Sources */,
 				553848F41CB5B1FC00F1ACA5 /* UITextField+Placeholder.m in Sources */,
 				553848E91CB5923000F1ACA5 /* HMXFastLogin.m in Sources */,
 				5577746B1C9449CD00AA37D5 /* AppDelegate.m in Sources */,

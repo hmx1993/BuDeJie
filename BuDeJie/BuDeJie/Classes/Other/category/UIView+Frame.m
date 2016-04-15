@@ -84,4 +84,9 @@
 {
     return self.center.x;
 }
+
++(instancetype)hmx_topicMiddleView
+{
+    return  [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil].lastObject;
+}
 @end

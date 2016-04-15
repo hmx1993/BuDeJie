@@ -9,6 +9,11 @@
 #import "HMXTopicCell.h"
 #import "HMXTipicsItem.h"
 #import <UIImageView+WebCache.h>
+
+#import "HMXTopicPictureView.h"
+#import "HMXTopicVideoView.h"
+#import "HMXTopicVoiceView.h"
+
 @interface HMXTopicCell();
 
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -26,6 +31,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *top_cmtLabel;
 @property (weak, nonatomic) IBOutlet UIView *topCmtView;
 
+//中间几种不同类型的View
+@property(nonatomic,weak)HMXTopicVoiceView *topicVoiceView;
+@property(nonatomic,weak)HMXTopicVideoView *topicVideoView;
+@property(nonatomic,weak)HMXTopicPictureView *topicPictureView;
 @end
 
 @implementation HMXTopicCell
@@ -49,6 +58,37 @@
     [alert addAction:action3];
     
     [self.window.rootViewController presentViewController:alert animated:YES completion:nil];
+}
+
+
+#pragma mark - 懒加载
+//保证每个cell的中间每种类型的view只会被添加一次
+-(HMXTopicVoiceView *)topicVoiceView
+{
+    if (_topicVoiceView == nil) {
+        HMXTopicVoiceView *topicVoiceView  = [HMXTopicVoiceView hmx_topicMiddleView];
+        [self.contentView addSubview:topicVoiceView];
+        _topicVoiceView = topicVoiceView;
+    }
+    return _topicVoiceView;
+}
+-(HMXTopicVideoView *)topicVideoView
+{
+    if (_topicVideoView == nil) {
+        HMXTopicVideoView *topicVideoView  = [HMXTopicVideoView hmx_topicMiddleView];
+        [self.contentView addSubview:topicVideoView];
+        _topicVideoView = topicVideoView;
+    }
+    return _topicVideoView;
+}
+-(HMXTopicPictureView *)topicPictureView
+{
+    if (_topicPictureView == nil) {
+        HMXTopicPictureView *topicPictureView  = [HMXTopicPictureView hmx_topicMiddleView];
+        [self.contentView addSubview:topicPictureView];
+        _topicPictureView = topicPictureView;
+    }
+    return _topicPictureView;
 }
 
 //设置cell的背景图片
@@ -99,6 +139,44 @@
     {
         self.topCmtView.hidden = YES;
     }
+    
+    
+    //通过模型来判断当前中间应该添加那中View,是声音?图片?还是视频
+    switch (topics.type) {
+        
+        //声音
+        case HMXTopTypeVoice:
+        //这里的大括号是为了让系统不报错,如果没有加这个大括号,系统就不知道voice这个局部变量的作用域范围
+        {//如果循环利用过来的cell中有其他类型的中间的View,就隐藏,并且自己不隐藏
+            self.topicPictureView.hidden = YES;
+            self.topicVideoView.hidden = YES;
+            self.topicVoiceView.hidden = NO;}
+            break;
+            
+        //视频
+        case HMXTopTypeVideo:
+        {self.topicPictureView.hidden = YES;
+            self.topicVideoView.hidden = NO;
+            self.topicVoiceView.hidden = YES;}
+            break;
+        
+        //图片
+        case HMXTopTypePicture:
+        {self.topicPictureView.hidden = NO;
+            self.topicVideoView.hidden = YES;
+            self.topicVoiceView.hidden = YES;}
+            break;
+        
+        //段子
+        case HMXTopTypeWord:
+        {self.topicPictureView.hidden = YES;
+            self.topicVideoView.hidden = YES;
+            self.topicVoiceView.hidden = YES;}
+            break;
+        default:
+            break;
+    }
+    
 }
 //封装的方法
 -(void)setButtonTitleWith:(UIButton *)button number:(NSInteger)number placeHolder:(NSString *)placeHoder
@@ -119,6 +197,32 @@
 {
     frame.size.height -= HMXMargin;
     [super setFrame:frame];
+}
+
+//设置cell中间view的frame
+-(void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    switch (self.topics.type)
+    {
+        //声音
+        case HMXTopTypeVoice:
+            self.topicVoiceView.frame = self.topics.middelViewframe;
+            break;
+            
+        //视频
+        case HMXTopTypeVideo:
+            self.topicVideoView.frame = self.topics.middelViewframe;
+            break;
+            
+        //图片
+        case HMXTopTypePicture:
+            self.topicPictureView.frame = self.topics.middelViewframe;
+            break;
+        default:
+            break;
+    }
 }
 
 @end

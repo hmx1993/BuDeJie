@@ -15,4 +15,7 @@
 @property(nonatomic,assign)CGFloat y;
 @property(nonatomic,assign)CGSize size;
 @property(nonatomic,assign)CGFloat centerX;
+
++(instancetype)hmx_topicMiddleView;
+
 @end

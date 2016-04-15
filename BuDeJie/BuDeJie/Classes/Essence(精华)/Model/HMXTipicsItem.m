@@ -23,6 +23,19 @@
     CGSize textMaxSize = CGSizeMake(HMXScreenW - 2 * HMXMargin, MAXFLOAT);
     _cellHeight += [self.text boundingRectWithSize:textMaxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15]} context:nil].size.height + HMXMargin;
     
+    //计算cell中间View的高度(只要不是段子,就得增加相应图片的高度)
+    if (self.type != HMXTopTypeWord) {
+        
+        //根据服务器返回的图片的宽高比来显示图片
+        CGFloat hmx_middelViewH = textMaxSize.width * self.height/self.width;
+        CGFloat hmx_middelViewW = textMaxSize.width;
+        CGFloat hmx_middelViewX = HMXMargin;
+        CGFloat hmx_middelViewY = _cellHeight;
+        self.middelViewframe = CGRectMake(hmx_middelViewX, hmx_middelViewY, hmx_middelViewW, hmx_middelViewH);
+        
+        _cellHeight += hmx_middelViewH + HMXMargin;
+    }
+    
     //计算最热评论的高度
     //最热评论
     if (self.top_cmt.count)// 有最热评论
@@ -41,11 +54,9 @@
         
         //评论的高度
         _cellHeight += [topCmt boundingRectWithSize:textMaxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15]} context:nil].size.height + HMXMargin;
-        
     }
     //工具条的高度
     _cellHeight += 35 + HMXMargin;
-    
     return _cellHeight;
 }
 

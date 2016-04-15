@@ -33,4 +33,18 @@
 #define globleColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 #define globleBg globleColor(223, 223, 223)
 
+
+typedef NS_ENUM(NSUInteger, HMXTopType) {
+    /** 全部 */
+    HMXTopTypeAll = 1,
+    /** 图片 */
+    HMXTopTypePicture = 10,
+    /** 文字 */
+    HMXTopTypeWord = 29,
+    /** 声音 */
+    HMXTopTypeVoice = 31,
+    /** 视频 */
+    HMXTopTypeVideo = 41
+};
+
 #endif

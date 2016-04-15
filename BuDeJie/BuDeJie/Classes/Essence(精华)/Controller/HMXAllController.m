@@ -29,9 +29,6 @@
 @property(nonatomic,assign)BOOL headerRefreshing;
 
 @property(nonatomic,strong)AFHTTPSessionManager *manager;
-
-
-
 @end
 
 static NSString * const ID = @"HMXTopicCellID";
@@ -43,7 +40,7 @@ static NSString * const ID = @"HMXTopicCellID";
 
 -(NSInteger)type
 {
-    return 31;
+    return HMXTopTypeAll;
 }
 
 -(AFHTTPSessionManager *)manager
@@ -392,13 +389,10 @@ static NSString * const ID = @"HMXTopicCellID";
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     HMXTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    
     //取出对应的模型
     HMXTipicsItem *topics = self.topicsArray[indexPath.row];
-    
     //给cell赋值
     cell.topics = topics;
-    
     
     return cell;
 }
@@ -407,7 +401,6 @@ static NSString * const ID = @"HMXTopicCellID";
 {
     //取出对应的模型
     HMXTipicsItem *topics = self.topicsArray[indexPath.row];
-    
     return topics.cellHeight;
 }
 
