@@ -6,6 +6,11 @@
 //  Copyright © 2016年 hemengxiang. All rights reserved.
 //
 /**
+ *  设置统一的间距值
+ */
+extern  CGFloat const HMXMargin;
+
+/**
  *  导航栏最大的Y值
  */
 extern  CGFloat const HMXNavMaxY;

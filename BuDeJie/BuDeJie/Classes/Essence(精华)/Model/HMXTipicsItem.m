@@ -10,4 +10,43 @@
 
 @implementation HMXTipicsItem
 
+-(CGFloat)cellHeight
+{
+    //如果已经经过计算,就直接返回
+    if (_cellHeight) return _cellHeight;
+    
+    //计算cell中固定内容的高度
+    //文字的Y值
+    _cellHeight += 55;
+    
+    //文字的高度
+    CGSize textMaxSize = CGSizeMake(HMXScreenW - 2 * HMXMargin, MAXFLOAT);
+    _cellHeight += [self.text boundingRectWithSize:textMaxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15]} context:nil].size.height + HMXMargin;
+    
+    //计算最热评论的高度
+    //最热评论
+    if (self.top_cmt.count)// 有最热评论
+    {
+        //"最热评论"标签的高度
+        _cellHeight += 21;
+        
+        //评论
+        NSString *name = self.top_cmt.firstObject[@"user"][@"username"];
+        NSString *content = self.top_cmt.firstObject[@"content"];
+        NSString *topCmt = [NSString stringWithFormat:@"%@:%@",name,content];
+        if (content.length == 0)
+        {//如果没有内容,就是个语音评论
+            topCmt = [NSString stringWithFormat:@"%@:[语音评论]",name];
+        }
+        
+        //评论的高度
+        _cellHeight += [topCmt boundingRectWithSize:textMaxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15]} context:nil].size.height + HMXMargin;
+        
+    }
+    //工具条的高度
+    _cellHeight += 35 + HMXMargin;
+    
+    return _cellHeight;
+}
+
 @end

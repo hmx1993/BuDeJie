@@ -12,7 +12,7 @@
 #import <MJExtension/MJExtension.h>
 #import "HMXTipicsItem.h"
 #import <SVProgressHUD/SVProgressHUD.h>
-
+#import "HMXTopicCell.h"
 @interface HMXAllController ()
 
 /** 存放模型的数组 */
@@ -27,13 +27,24 @@
 @property(nonatomic,weak)UILabel *header;
 /** 下拉刷新控件的刷新状态 */
 @property(nonatomic,assign)BOOL headerRefreshing;
+
 @property(nonatomic,strong)AFHTTPSessionManager *manager;
+
+
+
 @end
+
+static NSString * const ID = @"HMXTopicCellID";
 
 @implementation HMXAllController
 /**
  *  该服务器不允许上拉和下拉同时存在
  */
+
+-(NSInteger)type
+{
+    return 31;
+}
 
 -(AFHTTPSessionManager *)manager
 {
@@ -44,16 +55,33 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //设置内边距
-    self.tableView.contentInset = UIEdgeInsetsMake(HMXNavMaxY + HMXTitlesViewHeight , 0, HMXTabBarHeight, 0);
-    //设置滚动条的边距
-    self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+    
+    //处理tableView的细节
+    [self dealTableView];
 
     //添加刷新控件
     [self setUpRefresh];
     
     //监听通知
     [self setUpNotification];
+}
+
+#pragma mark - 处理tableView的细节
+-(void)dealTableView
+{
+    //注册cell
+    [self.tableView registerNib:[UINib nibWithNibName:@"HMXTopicCell" bundle:nil] forCellReuseIdentifier:ID];
+    
+    //设置内边距
+    self.tableView.contentInset = UIEdgeInsetsMake(HMXNavMaxY + HMXTitlesViewHeight , 0, HMXTabBarHeight, 0);
+    //设置滚动条的边距
+    self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+    
+    //取消tableView的分隔线
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    //设置tableView的背景色
+    self.tableView.backgroundColor = globleBg;
 }
 
 #pragma mark - 通知相关
@@ -109,7 +137,7 @@
     NSMutableDictionary *parame = [NSMutableDictionary dictionary];
     parame[@"a"] = @"list";
     parame[@"c"] = @"data";
-    parame[@"type"] = @(31);
+    parame[@"type"] = @(self.type);
     
     //发送请求
     [self.manager GET:HMXRequestUrl parameters:parame progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {//成功
@@ -152,7 +180,7 @@
     parame[@"a"] = @"list";
     parame[@"c"] = @"data";
     parame[@"maxtime"] = self.maxtime;
-    parame[@"type"] = @(31);
+    parame[@"type"] = @(self.type);
     
     //发送请求
     [self.manager GET:HMXRequestUrl parameters:parame progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {//成功
@@ -363,22 +391,24 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    static NSString *ID = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-    }
+    HMXTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     
     //取出对应的模型
     HMXTipicsItem *topics = self.topicsArray[indexPath.row];
     
     //给cell赋值
-    cell.textLabel.text = topics.name;
+    cell.topics = topics;
     
-    cell.detailTextLabel.text = topics.text;
+    
     return cell;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //取出对应的模型
+    HMXTipicsItem *topics = self.topicsArray[indexPath.row];
+    
+    return topics.cellHeight;
+}
 
 @end

@@ -7,6 +7,10 @@
 //
 
 /**
+ *  设置统一的间距值
+ */
+CGFloat const HMXMargin = 10;
+/**
  *  导航栏最大的Y值
  */
 CGFloat const HMXNavMaxY = 64;

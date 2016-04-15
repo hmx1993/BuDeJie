@@ -242,7 +242,6 @@
 #pragma mark - scrollView的代理方法
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
-    
     //计算当前偏移量对应的按钮角标
     NSInteger index = self.scrollView.contentOffset.x / self.scrollView.width;
     

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		551B374F1CBFA9BA00D5F1AB /* HMXTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 551B374D1CBFA9BA00D5F1AB /* HMXTopicCell.m */; };
+		551B37501CBFA9BA00D5F1AB /* HMXTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 551B374E1CBFA9BA00D5F1AB /* HMXTopicCell.xib */; };
 		55228C461CB4623C008CE422 /* HMXSubTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55228C451CB4623C008CE422 /* HMXSubTagViewController.m */; };
 		55228C491CB469B9008CE422 /* HMXSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 55228C481CB469B9008CE422 /* HMXSubTagItem.m */; };
 		55228C4D1CB46B9E008CE422 /* HMXSubTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55228C4B1CB46B9E008CE422 /* HMXSubTagCell.m */; };
@@ -69,6 +71,9 @@
 
 /* Begin PBXFileReference section */
 		2ACBE893D41F859ADA9A8740 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		551B374C1CBFA9BA00D5F1AB /* HMXTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXTopicCell.h; sourceTree = "<group>"; };
+		551B374D1CBFA9BA00D5F1AB /* HMXTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXTopicCell.m; sourceTree = "<group>"; };
+		551B374E1CBFA9BA00D5F1AB /* HMXTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXTopicCell.xib; sourceTree = "<group>"; };
 		55228C441CB4623C008CE422 /* HMXSubTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXSubTagViewController.h; sourceTree = "<group>"; };
 		55228C451CB4623C008CE422 /* HMXSubTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXSubTagViewController.m; sourceTree = "<group>"; };
 		55228C471CB469B9008CE422 /* HMXSubTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXSubTagItem.h; sourceTree = "<group>"; };
@@ -280,6 +285,9 @@
 			children = (
 				555F40311CB9333300716929 /* HMXTitlesButton.h */,
 				555F40321CB9333300716929 /* HMXTitlesButton.m */,
+				551B374C1CBFA9BA00D5F1AB /* HMXTopicCell.h */,
+				551B374D1CBFA9BA00D5F1AB /* HMXTopicCell.m */,
+				551B374E1CBFA9BA00D5F1AB /* HMXTopicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -695,6 +703,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				551B37501CBFA9BA00D5F1AB /* HMXTopicCell.xib in Resources */,
 				559768921CAE37880046D2D2 /* HMXRecommendViewController.xib in Resources */,
 				553848FB1CB5C33A00F1ACA5 /* HMXSquareCell.xib in Resources */,
 				559768B51CAEBF9D0046D2D2 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
@@ -776,6 +785,7 @@
 				55DC53171C945D4700FE4F95 /* HMXPublishViewController.m in Sources */,
 				55A509F81CB52791001FA32D /* HMXLoginRegisterView.m in Sources */,
 				553848EE1CB5972000F1ACA5 /* HMXFastLoginBtn.m in Sources */,
+				551B374F1CBFA9BA00D5F1AB /* HMXTopicCell.m in Sources */,
 				559768A71CAEBD560046D2D2 /* HMXADViewController.m in Sources */,
 				5597689F1CAE5CD80046D2D2 /* HMXSettingViewController.m in Sources */,
 				55DC530E1C945C9400FE4F95 /* HMXMeViewController.m in Sources */,

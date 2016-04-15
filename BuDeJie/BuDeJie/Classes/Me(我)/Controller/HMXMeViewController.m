@@ -50,11 +50,11 @@ static CGFloat const margin = 1;
     
     //设置tableView的组间距
     //如果是分组样式,默认每组头部和尾部会有一定的间距
-    self.tableView.sectionFooterHeight = 10;
+    self.tableView.sectionFooterHeight = HMXMargin;
     self.tableView.sectionHeaderHeight = 0;
     
     //将tableView的顶部内边距向上调整一定的距离
-    self.tableView.contentInset = UIEdgeInsetsMake(-25, 0, 0, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(HMXMargin - 35, 0, 0, 0);
 }
 
 
