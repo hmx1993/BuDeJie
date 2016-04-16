@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="4T4-fw-Uk4">
+        <view contentMode="scaleToFill" id="4T4-fw-Uk4" customClass="HMXTopicPictureView">
             <rect key="frame" x="0.0" y="0.0" width="205" height="57"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>

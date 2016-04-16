@@ -7,8 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="a5y-VF-5e0">
-            <rect key="frame" x="0.0" y="0.0" width="184" height="37"/>
+        <view contentMode="scaleToFill" id="a5y-VF-5e0" customClass="HMXTopicVideoView">
+            <rect key="frame" x="0.0" y="0.0" width="245" height="143"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="视频" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPy-Oa-gP2">
@@ -23,7 +23,7 @@
             <color key="backgroundColor" red="0.2162511735" green="1" blue="0.30180161170000003" alpha="1" colorSpace="calibratedRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="620" y="114.5"/>
+            <point key="canvasLocation" x="650.5" y="167.5"/>
         </view>
     </objects>
 </document>

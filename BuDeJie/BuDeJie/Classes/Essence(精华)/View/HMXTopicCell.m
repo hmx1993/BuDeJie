@@ -150,7 +150,9 @@
         {//如果循环利用过来的cell中有其他类型的中间的View,就隐藏,并且自己不隐藏
             self.topicPictureView.hidden = YES;
             self.topicVideoView.hidden = YES;
-            self.topicVoiceView.hidden = NO;}
+            self.topicVoiceView.hidden = NO;
+            self.topicVoiceView.topics = self.topics;
+        }
             break;
             
         //视频

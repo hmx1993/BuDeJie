@@ -40,7 +40,7 @@ static NSString * const ID = @"HMXTopicCellID";
 
 -(NSInteger)type
 {
-    return HMXTopTypeAll;
+    return HMXTopTypeVoice;
 }
 
 -(AFHTTPSessionManager *)manager

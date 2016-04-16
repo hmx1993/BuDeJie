@@ -7,23 +7,67 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="ezS-f9-cBS">
-            <rect key="frame" x="0.0" y="0.0" width="153" height="48"/>
+        <view contentMode="scaleToFill" id="ezS-f9-cBS" customClass="HMXTopicVoiceView">
+            <rect key="frame" x="0.0" y="0.0" width="288" height="146"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="声音" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFa-0s-0nU">
-                    <rect key="frame" x="0.0" y="0.0" width="85" height="48"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NIE-1d-EMZ">
+                    <rect key="frame" x="0.0" y="0.0" width="288" height="146"/>
                     <animations/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123播放" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFX-MF-vjQ">
+                    <rect key="frame" x="236" y="0.0" width="52" height="17"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.74332335992907805" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="0.65771830669999998" colorSpace="calibratedRGB"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时长" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2f-2o-D6m">
+                    <rect key="frame" x="260" y="129" width="28" height="17"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.6725121897163121" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="0.66048869677943256" colorSpace="calibratedRGB"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIi-kc-Irj">
+                    <rect key="frame" x="119" y="48" width="50" height="50"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="M29-Fh-gv0"/>
+                        <constraint firstAttribute="height" constant="50" id="xYx-97-aL1"/>
+                    </constraints>
+                    <state key="normal" image="playButtonPlay" backgroundImage="playButton"/>
+                </button>
             </subviews>
             <animations/>
-            <color key="backgroundColor" red="0.81702629130000004" green="0.93312050099999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NIE-1d-EMZ" secondAttribute="trailing" id="0Db-64-gd5"/>
+                <constraint firstItem="cIi-kc-Irj" firstAttribute="centerX" secondItem="ezS-f9-cBS" secondAttribute="centerX" id="0bv-YN-DiI"/>
+                <constraint firstItem="CFX-MF-vjQ" firstAttribute="top" secondItem="ezS-f9-cBS" secondAttribute="top" id="2NV-fw-eye"/>
+                <constraint firstAttribute="bottom" secondItem="NIE-1d-EMZ" secondAttribute="bottom" id="5cS-5C-sXn"/>
+                <constraint firstItem="NIE-1d-EMZ" firstAttribute="top" secondItem="ezS-f9-cBS" secondAttribute="top" id="7w7-q5-vSr"/>
+                <constraint firstItem="cIi-kc-Irj" firstAttribute="centerY" secondItem="ezS-f9-cBS" secondAttribute="centerY" id="C1m-qN-LCt"/>
+                <constraint firstItem="NIE-1d-EMZ" firstAttribute="leading" secondItem="ezS-f9-cBS" secondAttribute="leading" id="Gfj-z1-sGG"/>
+                <constraint firstAttribute="trailing" secondItem="CFX-MF-vjQ" secondAttribute="trailing" id="cKP-VH-yIx"/>
+                <constraint firstAttribute="trailing" secondItem="W2f-2o-D6m" secondAttribute="trailing" id="kSI-MC-RF5"/>
+                <constraint firstAttribute="bottom" secondItem="W2f-2o-D6m" secondAttribute="bottom" id="xCe-gf-aD4"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="225.5" y="-101"/>
+            <connections>
+                <outlet property="picture" destination="NIE-1d-EMZ" id="Y2U-fK-thz"/>
+                <outlet property="playcountLabel" destination="CFX-MF-vjQ" id="YLn-FK-rbB"/>
+                <outlet property="voicetimeLabel" destination="W2f-2o-D6m" id="oFG-x4-z5j"/>
+            </connections>
+            <point key="canvasLocation" x="353" y="-64"/>
         </view>
     </objects>
+    <resources>
+        <image name="playButton" width="63" height="63"/>
+        <image name="playButtonPlay" width="30" height="30"/>
+    </resources>
 </document>

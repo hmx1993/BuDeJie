@@ -47,6 +47,7 @@
 		558B2B841CA8B6DC005D19E2 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 558B2B811CA8B6DC005D19E2 /* UIBarButtonItem+Extension.m */; };
 		558B2B851CA8B6DC005D19E2 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 558B2B831CA8B6DC005D19E2 /* UIView+Frame.m */; };
 		5593E1371CB60184008B8E54 /* HMXWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5593E1361CB60184008B8E54 /* HMXWebViewController.m */; };
+		559589741CC24F9600F75F15 /* UIImageView+DownloadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 559589731CC24F9600F75F15 /* UIImageView+DownloadImage.m */; };
 		55963D1A1CB4425A007C359E /* HMXADItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 55963D191CB4425A007C359E /* HMXADItem.m */; };
 		559768911CAE37880046D2D2 /* HMXRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5597688F1CAE37880046D2D2 /* HMXRecommendViewController.m */; };
 		559768921CAE37880046D2D2 /* HMXRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 559768901CAE37880046D2D2 /* HMXRecommendViewController.xib */; };
@@ -147,6 +148,8 @@
 		558B2B831CA8B6DC005D19E2 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		5593E1351CB60184008B8E54 /* HMXWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXWebViewController.h; sourceTree = "<group>"; };
 		5593E1361CB60184008B8E54 /* HMXWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXWebViewController.m; sourceTree = "<group>"; };
+		559589721CC24F9600F75F15 /* UIImageView+DownloadImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+DownloadImage.h"; sourceTree = "<group>"; };
+		559589731CC24F9600F75F15 /* UIImageView+DownloadImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+DownloadImage.m"; sourceTree = "<group>"; };
 		55963D181CB4425A007C359E /* HMXADItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXADItem.h; sourceTree = "<group>"; };
 		55963D191CB4425A007C359E /* HMXADItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXADItem.m; sourceTree = "<group>"; };
 		5597688E1CAE37880046D2D2 /* HMXRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXRecommendViewController.h; sourceTree = "<group>"; };
@@ -562,6 +565,8 @@
 				55228C501CB47AE8008CE422 /* UIImage+CircleImage.m */,
 				553848F21CB5B1FC00F1ACA5 /* UITextField+Placeholder.h */,
 				553848F31CB5B1FC00F1ACA5 /* UITextField+Placeholder.m */,
+				559589721CC24F9600F75F15 /* UIImageView+DownloadImage.h */,
+				559589731CC24F9600F75F15 /* UIImageView+DownloadImage.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -831,6 +836,7 @@
 				55C3BE771CBD0C0600D07E4C /* HMXTipicsItem.m in Sources */,
 				5526D6A21CC0FAF00012E1DA /* HMXTopicVideoView.m in Sources */,
 				55CD6D671CA81989002E7187 /* HMXTabBar.m in Sources */,
+				559589741CC24F9600F75F15 /* UIImageView+DownloadImage.m in Sources */,
 				5526D69F1CC0FAE00012E1DA /* HMXTopicVoiceView.m in Sources */,
 				553848F41CB5B1FC00F1ACA5 /* UITextField+Placeholder.m in Sources */,
 				553848E91CB5923000F1ACA5 /* HMXFastLogin.m in Sources */,

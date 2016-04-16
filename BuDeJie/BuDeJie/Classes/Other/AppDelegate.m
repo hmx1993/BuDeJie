@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HMXTabBarController.h"
 #import "HMXADViewController.h"
+#import <AFNetworkReachabilityManager.h>
 @interface AppDelegate ()
 
 
@@ -29,6 +30,9 @@
     //展示广告控制器
 //    HMXADViewController *ad = [[HMXADViewController alloc] init];
 //    self.window.rootViewController = ad;
+    
+    //开启网络监测
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     
     //3.显示窗口
     [self.window makeKeyAndVisible];

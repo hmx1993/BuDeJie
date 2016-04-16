@@ -30,7 +30,20 @@
 /** 帖子的类型 */
 @property(nonatomic,assign)NSInteger type;
 
+//声音
+/** 播放次数 */
+@property(nonatomic,assign)NSInteger playcount;
+/** 时长 */
+@property(nonatomic,assign)NSInteger voicetime;
+/** 小图  */
+@property (nonatomic, strong) NSString *image0;
+/** 大图  */
+@property (nonatomic, strong) NSString *image1;
+/** 中图  */
+@property (nonatomic, strong) NSString *image2;
 
+
+//cell相关
 /** cell的高度 */
 @property(nonatomic,assign)CGFloat cellHeight;
 /** 图片的宽度 */
@@ -39,5 +52,7 @@
 @property (nonatomic, assign) CGFloat height;
 /** 中间view的frame */
 @property(nonatomic,assign)CGRect middelViewframe;
+
+
 
 @end

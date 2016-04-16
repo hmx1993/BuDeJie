@@ -23,6 +23,7 @@
 #import "UIImage+CircleImage.h"
 #import "UIBarButtonItem+Extension.h"
 #import "HMXConst.h"
+#import "UIImageView+DownloadImage.h"
 
 #ifdef DEBUG
 #define HMXLog(...) NSLog(__VA_ARGS__)
