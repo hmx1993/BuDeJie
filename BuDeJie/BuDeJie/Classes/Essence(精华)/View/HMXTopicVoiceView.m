@@ -7,9 +7,7 @@
 //
 
 #import "HMXTopicVoiceView.h"
-#import <UIImageView+WebCache.h>
-#import <AFNetworkReachabilityManager.h>
-
+#import "HMXSeeBigPictureController.h"
 @interface HMXTopicVoiceView ()
 @property (weak, nonatomic) IBOutlet UILabel *playcountLabel;
 
@@ -19,6 +17,25 @@
 @end
 
 @implementation HMXTopicVoiceView
+
+//给ImageView添加点击手势
+-(void)awakeFromNib
+{
+    
+    self.picture.userInteractionEnabled = YES;
+    [self.picture addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(seeOriginalImage)]];
+}
+
+//当点击图片的时候调用
+-(void)seeOriginalImage
+{
+    HMXSeeBigPictureController *bigPictureVc = [[HMXSeeBigPictureController alloc] init];
+    //传模型
+    bigPictureVc.topics = self.topics;
+    
+    [self.window.rootViewController presentViewController:bigPictureVc animated:YES completion:nil];
+}
+
 
 -(void)setTopics:(HMXTipicsItem *)topics
 {

@@ -48,6 +48,8 @@
 		558B2B851CA8B6DC005D19E2 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 558B2B831CA8B6DC005D19E2 /* UIView+Frame.m */; };
 		5593E1371CB60184008B8E54 /* HMXWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5593E1361CB60184008B8E54 /* HMXWebViewController.m */; };
 		559589741CC24F9600F75F15 /* UIImageView+DownloadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 559589731CC24F9600F75F15 /* UIImageView+DownloadImage.m */; };
+		559589781CC271AF00F75F15 /* HMXSeeBigPictureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 559589761CC271AF00F75F15 /* HMXSeeBigPictureController.m */; };
+		559589791CC271AF00F75F15 /* HMXSeeBigPictureController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 559589771CC271AF00F75F15 /* HMXSeeBigPictureController.xib */; };
 		55963D1A1CB4425A007C359E /* HMXADItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 55963D191CB4425A007C359E /* HMXADItem.m */; };
 		559768911CAE37880046D2D2 /* HMXRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5597688F1CAE37880046D2D2 /* HMXRecommendViewController.m */; };
 		559768921CAE37880046D2D2 /* HMXRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 559768901CAE37880046D2D2 /* HMXRecommendViewController.xib */; };
@@ -150,6 +152,9 @@
 		5593E1361CB60184008B8E54 /* HMXWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXWebViewController.m; sourceTree = "<group>"; };
 		559589721CC24F9600F75F15 /* UIImageView+DownloadImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+DownloadImage.h"; sourceTree = "<group>"; };
 		559589731CC24F9600F75F15 /* UIImageView+DownloadImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+DownloadImage.m"; sourceTree = "<group>"; };
+		559589751CC271AE00F75F15 /* HMXSeeBigPictureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXSeeBigPictureController.h; sourceTree = "<group>"; };
+		559589761CC271AF00F75F15 /* HMXSeeBigPictureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXSeeBigPictureController.m; sourceTree = "<group>"; };
+		559589771CC271AF00F75F15 /* HMXSeeBigPictureController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXSeeBigPictureController.xib; sourceTree = "<group>"; };
 		55963D181CB4425A007C359E /* HMXADItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXADItem.h; sourceTree = "<group>"; };
 		55963D191CB4425A007C359E /* HMXADItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXADItem.m; sourceTree = "<group>"; };
 		5597688E1CAE37880046D2D2 /* HMXRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXRecommendViewController.h; sourceTree = "<group>"; };
@@ -285,6 +290,9 @@
 				555F40261CB913E200716929 /* HMXWordController.m */,
 				555F40281CB913F600716929 /* HMXVoiceController.h */,
 				555F40291CB913F600716929 /* HMXVoiceController.m */,
+				559589751CC271AE00F75F15 /* HMXSeeBigPictureController.h */,
+				559589761CC271AF00F75F15 /* HMXSeeBigPictureController.m */,
+				559589771CC271AF00F75F15 /* HMXSeeBigPictureController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -750,6 +758,7 @@
 				5526D6A41CC0FB030012E1DA /* HMXTopicPictureView.xib in Resources */,
 				5526D6A61CC0FB170012E1DA /* HMXTopicVoiceView.xib in Resources */,
 				553848EB1CB5923C00F1ACA5 /* HMXFastLogin.xib in Resources */,
+				559589791CC271AF00F75F15 /* HMXSeeBigPictureController.xib in Resources */,
 				5526D6A81CC0FB210012E1DA /* HMXTopicVideoView.xib in Resources */,
 				559768B31CAEBF9D0046D2D2 /* LaunchImage-700@2x.png in Resources */,
 				557774441C94037D00AA37D5 /* Assets.xcassets in Resources */,
@@ -855,6 +864,7 @@
 				55A564151CAD337D002ED684 /* HMXNavigationController.m in Sources */,
 				55228C511CB47AE8008CE422 /* UIImage+CircleImage.m in Sources */,
 				557C57D91CB6419E00D2B597 /* BuDeJieFileManager.m in Sources */,
+				559589781CC271AF00F75F15 /* HMXSeeBigPictureController.m in Sources */,
 				5593E1371CB60184008B8E54 /* HMXWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

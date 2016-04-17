@@ -159,14 +159,18 @@
         case HMXTopTypeVideo:
         {self.topicPictureView.hidden = YES;
             self.topicVideoView.hidden = NO;
-            self.topicVoiceView.hidden = YES;}
+            self.topicVoiceView.hidden = YES;
+            self.topicVideoView.topics = self.topics;
+        }
             break;
         
         //图片
         case HMXTopTypePicture:
         {self.topicPictureView.hidden = NO;
             self.topicVideoView.hidden = YES;
-            self.topicVoiceView.hidden = YES;}
+            self.topicVoiceView.hidden = YES;
+            self.topicPictureView.topics = self.topics;
+        }
             break;
         
         //段子

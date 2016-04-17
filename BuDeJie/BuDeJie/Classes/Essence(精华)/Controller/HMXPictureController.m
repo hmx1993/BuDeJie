@@ -21,8 +21,6 @@
     self.tableView.contentInset = UIEdgeInsetsMake(HMXNavMaxY + HMXTitlesViewHeight , 0, HMXTabBarHeight, 0);
     //设置滚动条的边距
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
-    
-    NSLog(@"%@",[self class]);
 }
 
 #pragma mark - Table view data source

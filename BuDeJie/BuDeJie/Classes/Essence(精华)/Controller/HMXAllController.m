@@ -40,7 +40,7 @@ static NSString * const ID = @"HMXTopicCellID";
 
 -(NSInteger)type
 {
-    return HMXTopTypeVoice;
+    return HMXTopTypeAll;
 }
 
 -(AFHTTPSessionManager *)manager
@@ -138,6 +138,8 @@ static NSString * const ID = @"HMXTopicCellID";
     
     //发送请求
     [self.manager GET:HMXRequestUrl parameters:parame progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {//成功
+        
+        HMXAFNWriteToPlist(000)
         
         // 存储maxtime
         self.maxtime = responseObject[@"info"][@"maxtime"];
@@ -363,6 +365,10 @@ static NSString * const ID = @"HMXTopicCellID";
 {
     [self dealFooter];
     [self dealHeader];
+    
+    //清除缓存
+    [[SDImageCache sharedImageCache] clearMemory];
+    
 }
 
 -(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate

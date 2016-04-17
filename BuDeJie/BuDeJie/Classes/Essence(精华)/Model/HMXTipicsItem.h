@@ -30,6 +30,13 @@
 /** 帖子的类型 */
 @property(nonatomic,assign)NSInteger type;
 
+//图片
+
+//是否是gif图片
+@property(nonatomic,assign)BOOL is_gif;
+//是否是长图
+@property(nonatomic,assign)BOOL isLong;
+
 //声音
 /** 播放次数 */
 @property(nonatomic,assign)NSInteger playcount;
@@ -42,6 +49,9 @@
 /** 中图  */
 @property (nonatomic, strong) NSString *image2;
 
+//视频
+/** 时长 */
+@property(nonatomic,assign)NSInteger videotime;
 
 //cell相关
 /** cell的高度 */
