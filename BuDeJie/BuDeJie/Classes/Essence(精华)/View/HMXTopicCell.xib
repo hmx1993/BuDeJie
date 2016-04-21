@@ -162,33 +162,33 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnL-58-1ls">
                         <rect key="frame" x="10" y="55" width="300" height="18"/>
                         <animations/>
-                        <color key="backgroundColor" red="0.93458942050000005" green="1" blue="0.74797425949999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1t1-Wy-ebk">
-                        <rect key="frame" x="10" y="168" width="300" height="98"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1t1-Wy-ebk">
+                        <rect key="frame" x="10" y="173" width="300" height="93"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最热评论" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDR-Na-ufJ">
                                 <rect key="frame" x="0.0" y="0.0" width="300" height="21"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.2162511735" green="1" blue="0.30180161170000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="....罚款是福建会计 ....罚款是福建会计 ....罚款是福建会计 ....罚款是福建会计 ....罚款是福建会计 ....罚款是福建会计 ....罚款是福建会计 ....罚款是福建会计 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tU-0V-iGI">
-                                <rect key="frame" x="0.0" y="21" width="300" height="77"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="....罚款是福建会计 ....罚款是福建会计 ....罚款是福建会计 ....罚款是福建会计 ....罚款是福建会计 ....罚款是福建会计 ....罚款是福建会计 ....罚款是福建会计 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tU-0V-iGI">
+                                <rect key="frame" x="0.0" y="21" width="300" height="72"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.93458942050000005" green="1" blue="0.74797425949999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.63493721729999997" green="0.73454207140000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="5tU-0V-iGI" secondAttribute="trailing" id="50x-Em-EOZ"/>
                             <constraint firstAttribute="trailing" secondItem="mDR-Na-ufJ" secondAttribute="trailing" id="NuG-KE-vIY"/>

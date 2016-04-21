@@ -18,15 +18,6 @@
                         <constraint firstAttribute="height" constant="30" id="DJm-dZ-7fc"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9m-MJ-U6t">
-                    <rect key="frame" x="142" y="83" width="60" height="60"/>
-                    <animations/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="60" id="Zzq-3J-lgV"/>
-                        <constraint firstAttribute="width" constant="60" id="jKC-J9-eJk"/>
-                    </constraints>
-                    <state key="normal" image="video-play"/>
-                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="播放次数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwA-ef-IJH">
                     <rect key="frame" x="288" y="0.0" width="56" height="17"/>
                     <animations/>
@@ -48,6 +39,15 @@
                     <animations/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9m-MJ-U6t">
+                    <rect key="frame" x="142" y="83" width="60" height="60"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Zzq-3J-lgV"/>
+                        <constraint firstAttribute="width" constant="60" id="jKC-J9-eJk"/>
+                    </constraints>
+                    <state key="normal" image="video-play"/>
+                </button>
             </subviews>
             <animations/>
             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -73,7 +73,7 @@
                 <outlet property="playcountLabel" destination="AwA-ef-IJH" id="5ge-Hj-Qhk"/>
                 <outlet property="videotimeLabel" destination="BpL-I4-ITe" id="Be7-6R-bdQ"/>
             </connections>
-            <point key="canvasLocation" x="700" y="208.5"/>
+            <point key="canvasLocation" x="806" y="225.5"/>
         </view>
     </objects>
     <resources>

@@ -90,7 +90,6 @@
     scrollView.delegate = self;
     
     scrollView.frame = self.view.bounds;
-    scrollView.backgroundColor = [UIColor cyanColor];
     
     //设置scrollView的属性
     NSInteger childVcsCount = self.childViewControllers.count;

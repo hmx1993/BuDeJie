@@ -22,6 +22,12 @@
 		5526D6A41CC0FB030012E1DA /* HMXTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5526D6A31CC0FB030012E1DA /* HMXTopicPictureView.xib */; };
 		5526D6A61CC0FB170012E1DA /* HMXTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5526D6A51CC0FB170012E1DA /* HMXTopicVoiceView.xib */; };
 		5526D6A81CC0FB210012E1DA /* HMXTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5526D6A71CC0FB210012E1DA /* HMXTopicVideoView.xib */; };
+		552857A41CC8F34700F4F3DC /* HMXTopicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 552857A31CC8F34700F4F3DC /* HMXTopicsViewController.m */; };
+		552857A71CC8FECF00F4F3DC /* HMXAllController.m in Sources */ = {isa = PBXBuildFile; fileRef = 552857A61CC8FECF00F4F3DC /* HMXAllController.m */; };
+		552857AA1CC8FF3900F4F3DC /* HMXVedioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 552857A91CC8FF3900F4F3DC /* HMXVedioController.m */; };
+		552857AD1CC9167300F4F3DC /* HMXPictureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 552857AC1CC9167300F4F3DC /* HMXPictureController.m */; };
+		552857B01CC9169900F4F3DC /* HMXWordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 552857AF1CC9169900F4F3DC /* HMXWordController.m */; };
+		552857B31CC916BF00F4F3DC /* HMXVoiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 552857B21CC916BF00F4F3DC /* HMXVoiceController.m */; };
 		553848E91CB5923000F1ACA5 /* HMXFastLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 553848E81CB5923000F1ACA5 /* HMXFastLogin.m */; };
 		553848EB1CB5923C00F1ACA5 /* HMXFastLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 553848EA1CB5923C00F1ACA5 /* HMXFastLogin.xib */; };
 		553848EE1CB5972000F1ACA5 /* HMXFastLoginBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 553848ED1CB5972000F1ACA5 /* HMXFastLoginBtn.m */; };
@@ -31,11 +37,6 @@
 		553848FA1CB5C33A00F1ACA5 /* HMXSquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 553848F81CB5C33A00F1ACA5 /* HMXSquareCell.m */; };
 		553848FB1CB5C33A00F1ACA5 /* HMXSquareCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 553848F91CB5C33A00F1ACA5 /* HMXSquareCell.xib */; };
 		553848FE1CB5CB0400F1ACA5 /* HMXSqaureItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 553848FD1CB5CB0400F1ACA5 /* HMXSqaureItem.m */; };
-		555F401E1CB9138F00716929 /* HMXAllController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F401D1CB9138E00716929 /* HMXAllController.m */; };
-		555F40211CB913C100716929 /* HMXVedioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F40201CB913C100716929 /* HMXVedioController.m */; };
-		555F40241CB913D700716929 /* HMXPictureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F40231CB913D700716929 /* HMXPictureController.m */; };
-		555F40271CB913E200716929 /* HMXWordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F40261CB913E200716929 /* HMXWordController.m */; };
-		555F402A1CB913F600716929 /* HMXVoiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F40291CB913F600716929 /* HMXVoiceController.m */; };
 		555F40301CB9259E00716929 /* HMXConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F402F1CB9259E00716929 /* HMXConst.m */; };
 		555F40331CB9333300716929 /* HMXTitlesButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F40321CB9333300716929 /* HMXTitlesButton.m */; };
 		557774441C94037D00AA37D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 557774431C94037D00AA37D5 /* Assets.xcassets */; };
@@ -104,6 +105,18 @@
 		5526D6A31CC0FB030012E1DA /* HMXTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXTopicPictureView.xib; sourceTree = "<group>"; };
 		5526D6A51CC0FB170012E1DA /* HMXTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXTopicVoiceView.xib; sourceTree = "<group>"; };
 		5526D6A71CC0FB210012E1DA /* HMXTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXTopicVideoView.xib; sourceTree = "<group>"; };
+		552857A21CC8F34700F4F3DC /* HMXTopicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXTopicsViewController.h; sourceTree = "<group>"; };
+		552857A31CC8F34700F4F3DC /* HMXTopicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXTopicsViewController.m; sourceTree = "<group>"; };
+		552857A51CC8FECF00F4F3DC /* HMXAllController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXAllController.h; sourceTree = "<group>"; };
+		552857A61CC8FECF00F4F3DC /* HMXAllController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXAllController.m; sourceTree = "<group>"; };
+		552857A81CC8FF3900F4F3DC /* HMXVedioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXVedioController.h; sourceTree = "<group>"; };
+		552857A91CC8FF3900F4F3DC /* HMXVedioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXVedioController.m; sourceTree = "<group>"; };
+		552857AB1CC9167300F4F3DC /* HMXPictureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXPictureController.h; sourceTree = "<group>"; };
+		552857AC1CC9167300F4F3DC /* HMXPictureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXPictureController.m; sourceTree = "<group>"; };
+		552857AE1CC9169900F4F3DC /* HMXWordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXWordController.h; sourceTree = "<group>"; };
+		552857AF1CC9169900F4F3DC /* HMXWordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXWordController.m; sourceTree = "<group>"; };
+		552857B11CC916BF00F4F3DC /* HMXVoiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXVoiceController.h; sourceTree = "<group>"; };
+		552857B21CC916BF00F4F3DC /* HMXVoiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXVoiceController.m; sourceTree = "<group>"; };
 		553848E71CB5923000F1ACA5 /* HMXFastLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXFastLogin.h; sourceTree = "<group>"; };
 		553848E81CB5923000F1ACA5 /* HMXFastLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXFastLogin.m; sourceTree = "<group>"; };
 		553848EA1CB5923C00F1ACA5 /* HMXFastLogin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXFastLogin.xib; sourceTree = "<group>"; };
@@ -119,16 +132,6 @@
 		553848F91CB5C33A00F1ACA5 /* HMXSquareCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMXSquareCell.xib; sourceTree = "<group>"; };
 		553848FC1CB5CB0400F1ACA5 /* HMXSqaureItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXSqaureItem.h; sourceTree = "<group>"; };
 		553848FD1CB5CB0400F1ACA5 /* HMXSqaureItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXSqaureItem.m; sourceTree = "<group>"; };
-		555F401C1CB9138E00716929 /* HMXAllController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXAllController.h; sourceTree = "<group>"; };
-		555F401D1CB9138E00716929 /* HMXAllController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXAllController.m; sourceTree = "<group>"; };
-		555F401F1CB913C100716929 /* HMXVedioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXVedioController.h; sourceTree = "<group>"; };
-		555F40201CB913C100716929 /* HMXVedioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXVedioController.m; sourceTree = "<group>"; };
-		555F40221CB913D700716929 /* HMXPictureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXPictureController.h; sourceTree = "<group>"; };
-		555F40231CB913D700716929 /* HMXPictureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXPictureController.m; sourceTree = "<group>"; };
-		555F40251CB913E200716929 /* HMXWordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXWordController.h; sourceTree = "<group>"; };
-		555F40261CB913E200716929 /* HMXWordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXWordController.m; sourceTree = "<group>"; };
-		555F40281CB913F600716929 /* HMXVoiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXVoiceController.h; sourceTree = "<group>"; };
-		555F40291CB913F600716929 /* HMXVoiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXVoiceController.m; sourceTree = "<group>"; };
 		555F402E1CB9259E00716929 /* HMXConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXConst.h; sourceTree = "<group>"; };
 		555F402F1CB9259E00716929 /* HMXConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXConst.m; sourceTree = "<group>"; };
 		555F40311CB9333300716929 /* HMXTitlesButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXTitlesButton.h; sourceTree = "<group>"; };
@@ -280,16 +283,18 @@
 			children = (
 				55DC53061C945C5300FE4F95 /* HMXEssenceViewController.h */,
 				55DC53071C945C5300FE4F95 /* HMXEssenceViewController.m */,
-				555F401C1CB9138E00716929 /* HMXAllController.h */,
-				555F401D1CB9138E00716929 /* HMXAllController.m */,
-				555F401F1CB913C100716929 /* HMXVedioController.h */,
-				555F40201CB913C100716929 /* HMXVedioController.m */,
-				555F40221CB913D700716929 /* HMXPictureController.h */,
-				555F40231CB913D700716929 /* HMXPictureController.m */,
-				555F40251CB913E200716929 /* HMXWordController.h */,
-				555F40261CB913E200716929 /* HMXWordController.m */,
-				555F40281CB913F600716929 /* HMXVoiceController.h */,
-				555F40291CB913F600716929 /* HMXVoiceController.m */,
+				552857A21CC8F34700F4F3DC /* HMXTopicsViewController.h */,
+				552857A31CC8F34700F4F3DC /* HMXTopicsViewController.m */,
+				552857A51CC8FECF00F4F3DC /* HMXAllController.h */,
+				552857A61CC8FECF00F4F3DC /* HMXAllController.m */,
+				552857A81CC8FF3900F4F3DC /* HMXVedioController.h */,
+				552857A91CC8FF3900F4F3DC /* HMXVedioController.m */,
+				552857AB1CC9167300F4F3DC /* HMXPictureController.h */,
+				552857AC1CC9167300F4F3DC /* HMXPictureController.m */,
+				552857AE1CC9169900F4F3DC /* HMXWordController.h */,
+				552857AF1CC9169900F4F3DC /* HMXWordController.m */,
+				552857B11CC916BF00F4F3DC /* HMXVoiceController.h */,
+				552857B21CC916BF00F4F3DC /* HMXVoiceController.m */,
 				559589751CC271AE00F75F15 /* HMXSeeBigPictureController.h */,
 				559589761CC271AF00F75F15 /* HMXSeeBigPictureController.m */,
 				559589771CC271AF00F75F15 /* HMXSeeBigPictureController.xib */,
@@ -824,6 +829,8 @@
 				55228C491CB469B9008CE422 /* HMXSubTagItem.m in Sources */,
 				55963D1A1CB4425A007C359E /* HMXADItem.m in Sources */,
 				55DC53171C945D4700FE4F95 /* HMXPublishViewController.m in Sources */,
+				552857A71CC8FECF00F4F3DC /* HMXAllController.m in Sources */,
+				552857B31CC916BF00F4F3DC /* HMXVoiceController.m in Sources */,
 				55A509F81CB52791001FA32D /* HMXLoginRegisterView.m in Sources */,
 				5526D69C1CC0FAC10012E1DA /* HMXTopicPictureView.m in Sources */,
 				553848EE1CB5972000F1ACA5 /* HMXFastLoginBtn.m in Sources */,
@@ -833,13 +840,12 @@
 				55DC530E1C945C9400FE4F95 /* HMXMeViewController.m in Sources */,
 				553848FA1CB5C33A00F1ACA5 /* HMXSquareCell.m in Sources */,
 				55DC53111C945CED00FE4F95 /* HMXNewViewController.m in Sources */,
-				555F40271CB913E200716929 /* HMXWordController.m in Sources */,
-				555F40211CB913C100716929 /* HMXVedioController.m in Sources */,
 				555F40331CB9333300716929 /* HMXTitlesButton.m in Sources */,
 				55DC530B1C945C7F00FE4F95 /* HMXFriendTrendViewController.m in Sources */,
+				552857A41CC8F34700F4F3DC /* HMXTopicsViewController.m in Sources */,
+				552857AA1CC8FF3900F4F3DC /* HMXVedioController.m in Sources */,
 				558B2B841CA8B6DC005D19E2 /* UIBarButtonItem+Extension.m in Sources */,
 				5577746C1C9449CD00AA37D5 /* main.m in Sources */,
-				555F40241CB913D700716929 /* HMXPictureController.m in Sources */,
 				5577746F1C944DB100AA37D5 /* HMXTabBarController.m in Sources */,
 				553848F11CB59D7100F1ACA5 /* HMXLoginTextField.m in Sources */,
 				55C3BE771CBD0C0600D07E4C /* HMXTipicsItem.m in Sources */,
@@ -848,15 +854,15 @@
 				559589741CC24F9600F75F15 /* UIImageView+DownloadImage.m in Sources */,
 				5526D69F1CC0FAE00012E1DA /* HMXTopicVoiceView.m in Sources */,
 				553848F41CB5B1FC00F1ACA5 /* UITextField+Placeholder.m in Sources */,
+				552857B01CC9169900F4F3DC /* HMXWordController.m in Sources */,
 				553848E91CB5923000F1ACA5 /* HMXFastLogin.m in Sources */,
 				5577746B1C9449CD00AA37D5 /* AppDelegate.m in Sources */,
+				552857AD1CC9167300F4F3DC /* HMXPictureController.m in Sources */,
 				55228C461CB4623C008CE422 /* HMXSubTagViewController.m in Sources */,
 				55DC53081C945C5300FE4F95 /* HMXEssenceViewController.m in Sources */,
 				559768951CAE3D6C0046D2D2 /* CategoryItem.m in Sources */,
 				555F40301CB9259E00716929 /* HMXConst.m in Sources */,
 				559768911CAE37880046D2D2 /* HMXRecommendViewController.m in Sources */,
-				555F402A1CB913F600716929 /* HMXVoiceController.m in Sources */,
-				555F401E1CB9138F00716929 /* HMXAllController.m in Sources */,
 				55228C4D1CB46B9E008CE422 /* HMXSubTagCell.m in Sources */,
 				55228C5A1CB4843F008CE422 /* HMXLoginRegisterController.m in Sources */,
 				558B2B851CA8B6DC005D19E2 /* UIView+Frame.m in Sources */,

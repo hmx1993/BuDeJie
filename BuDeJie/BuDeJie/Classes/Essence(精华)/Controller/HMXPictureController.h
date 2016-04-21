@@ -2,12 +2,12 @@
 //  HMXPictureController.h
 //  BuDeJie
 //
-//  Created by hemengxiang on 16/4/9.
+//  Created by hemengxiang on 16/4/21.
 //  Copyright © 2016年 hemengxiang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "HMXTopicsViewController.h"
 
-@interface HMXPictureController : UITableViewController
+@interface HMXPictureController : HMXTopicsViewController
 
 @end
