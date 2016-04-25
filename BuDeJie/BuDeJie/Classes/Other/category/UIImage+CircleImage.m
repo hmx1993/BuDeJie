@@ -38,4 +38,10 @@
         return image;
 }
 
++(UIImage *)hmx_circleImageWithImageName:(NSString *)imageName;
+{
+    UIImage *image = [UIImage imageNamed:imageName];
+    return [image circleImage];
+}
+
 @end

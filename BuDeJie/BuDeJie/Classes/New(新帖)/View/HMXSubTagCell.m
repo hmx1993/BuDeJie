@@ -24,7 +24,9 @@
     
     //设置图像
     
-    [self.iconView sd_setImageWithURL:[NSURL URLWithString:subTagItem.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+    UIImage *placeholderImage = [UIImage hmx_circleImageWithImageName:@"defaultUserIcon"];
+    
+    [self.iconView sd_setImageWithURL:[NSURL URLWithString:subTagItem.image_list] placeholderImage:placeholderImage completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         //完成后的回调传过来的是一张从网络上下载好的图片
         //将图片进行裁剪
         

@@ -76,6 +76,9 @@
 		55DC530E1C945C9400FE4F95 /* HMXMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DC530D1C945C9400FE4F95 /* HMXMeViewController.m */; };
 		55DC53111C945CED00FE4F95 /* HMXNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DC53101C945CED00FE4F95 /* HMXNewViewController.m */; };
 		55DC53171C945D4700FE4F95 /* HMXPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DC53161C945D4700FE4F95 /* HMXPublishViewController.m */; };
+		55EDA6D31CCBB1BB0054CB68 /* HMXHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EDA6D21CCBB1BB0054CB68 /* HMXHTTPSessionManager.m */; };
+		55EDA6D61CCBB3410054CB68 /* HMXDIYHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EDA6D51CCBB3410054CB68 /* HMXDIYHeader.m */; };
+		55EDA6D91CCBB6430054CB68 /* HMXRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EDA6D81CCBB6430054CB68 /* HMXRefreshHeader.m */; };
 		9B7368DC6BCF97F37CD8BF7A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0327E7A077ACA594D851FE /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -198,6 +201,12 @@
 		55DC53101C945CED00FE4F95 /* HMXNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXNewViewController.m; sourceTree = "<group>"; };
 		55DC53151C945D4700FE4F95 /* HMXPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXPublishViewController.h; sourceTree = "<group>"; };
 		55DC53161C945D4700FE4F95 /* HMXPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXPublishViewController.m; sourceTree = "<group>"; };
+		55EDA6D11CCBB1BB0054CB68 /* HMXHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXHTTPSessionManager.h; sourceTree = "<group>"; };
+		55EDA6D21CCBB1BB0054CB68 /* HMXHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXHTTPSessionManager.m; sourceTree = "<group>"; };
+		55EDA6D41CCBB3410054CB68 /* HMXDIYHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXDIYHeader.h; sourceTree = "<group>"; };
+		55EDA6D51CCBB3410054CB68 /* HMXDIYHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXDIYHeader.m; sourceTree = "<group>"; };
+		55EDA6D71CCBB6430054CB68 /* HMXRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXRefreshHeader.h; sourceTree = "<group>"; };
+		55EDA6D81CCBB6430054CB68 /* HMXRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXRefreshHeader.m; sourceTree = "<group>"; };
 		90C153BEF161D24B7D53C3D3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AB0327E7A077ACA594D851FE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -390,6 +399,8 @@
 				557774581C9449CD00AA37D5 /* Controller */,
 				557774591C9449CD00AA37D5 /* Model */,
 				5577745A1C9449CD00AA37D5 /* View */,
+				55EDA6D11CCBB1BB0054CB68 /* HMXHTTPSessionManager.h */,
+				55EDA6D21CCBB1BB0054CB68 /* HMXHTTPSessionManager.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -417,6 +428,10 @@
 			children = (
 				55CD6D651CA81989002E7187 /* HMXTabBar.h */,
 				55CD6D661CA81989002E7187 /* HMXTabBar.m */,
+				55EDA6D41CCBB3410054CB68 /* HMXDIYHeader.h */,
+				55EDA6D51CCBB3410054CB68 /* HMXDIYHeader.m */,
+				55EDA6D71CCBB6430054CB68 /* HMXRefreshHeader.h */,
+				55EDA6D81CCBB6430054CB68 /* HMXRefreshHeader.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -831,6 +846,7 @@
 				55DC53171C945D4700FE4F95 /* HMXPublishViewController.m in Sources */,
 				552857A71CC8FECF00F4F3DC /* HMXAllController.m in Sources */,
 				552857B31CC916BF00F4F3DC /* HMXVoiceController.m in Sources */,
+				55EDA6D61CCBB3410054CB68 /* HMXDIYHeader.m in Sources */,
 				55A509F81CB52791001FA32D /* HMXLoginRegisterView.m in Sources */,
 				5526D69C1CC0FAC10012E1DA /* HMXTopicPictureView.m in Sources */,
 				553848EE1CB5972000F1ACA5 /* HMXFastLoginBtn.m in Sources */,
@@ -845,6 +861,7 @@
 				552857A41CC8F34700F4F3DC /* HMXTopicsViewController.m in Sources */,
 				552857AA1CC8FF3900F4F3DC /* HMXVedioController.m in Sources */,
 				558B2B841CA8B6DC005D19E2 /* UIBarButtonItem+Extension.m in Sources */,
+				55EDA6D91CCBB6430054CB68 /* HMXRefreshHeader.m in Sources */,
 				5577746C1C9449CD00AA37D5 /* main.m in Sources */,
 				5577746F1C944DB100AA37D5 /* HMXTabBarController.m in Sources */,
 				553848F11CB59D7100F1ACA5 /* HMXLoginTextField.m in Sources */,
@@ -865,6 +882,7 @@
 				559768911CAE37880046D2D2 /* HMXRecommendViewController.m in Sources */,
 				55228C4D1CB46B9E008CE422 /* HMXSubTagCell.m in Sources */,
 				55228C5A1CB4843F008CE422 /* HMXLoginRegisterController.m in Sources */,
+				55EDA6D31CCBB1BB0054CB68 /* HMXHTTPSessionManager.m in Sources */,
 				558B2B851CA8B6DC005D19E2 /* UIView+Frame.m in Sources */,
 				553848FE1CB5CB0400F1ACA5 /* HMXSqaureItem.m in Sources */,
 				55A564151CAD337D002ED684 /* HMXNavigationController.m in Sources */,

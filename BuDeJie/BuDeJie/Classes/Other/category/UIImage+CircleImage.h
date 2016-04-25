@@ -10,7 +10,9 @@
 
 @interface UIImage (CircleImage)
 
+//生成一张圆角图片
 -(UIImage *)circleImage;
-
+//生成一张圆角图片
++(UIImage *)hmx_circleImageWithImageName:(NSString *)imageName;
 
 @end
