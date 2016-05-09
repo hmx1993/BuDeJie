@@ -11,15 +11,15 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="134"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvz-fX-wax" customClass="HMXFastLoginBtn">
-                    <rect key="frame" x="-4" y="49" width="133" height="70"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvz-fX-wax" customClass="HMXFastLoginBtn">
+                    <rect key="frame" x="0.0" y="34" width="125" height="100"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="asx-HE-zeV"/>
                     </constraints>
                     <state key="normal" title="QQ登录" image="login_QQ_icon"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5m-Cd-zIi" customClass="HMXFastLoginBtn">
-                    <rect key="frame" x="242" y="49" width="142" height="70"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5m-Cd-zIi" customClass="HMXFastLoginBtn">
+                    <rect key="frame" x="250" y="34" width="125" height="100"/>
                     <state key="normal" title="腾讯登录" image="login_tecent_icon"/>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快速登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HU0-OK-bxr">
@@ -31,8 +31,8 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7H-Dh-R4s" customClass="HMXFastLoginBtn">
-                    <rect key="frame" x="117" y="49" width="142" height="70"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7H-Dh-R4s" customClass="HMXFastLoginBtn">
+                    <rect key="frame" x="125" y="34" width="125" height="100"/>
                     <state key="normal" title="微博登录" image="login_sina_icon"/>
                 </button>
             </subviews>

@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HMXFriendTrendViewController">
             <connections>
+                <outlet property="dongtuImageView" destination="3vD-NS-8AP" id="zDD-HC-IgS"/>
                 <outlet property="view" destination="iN0-l3-epB" id="EHS-PP-N1k"/>
             </connections>
         </placeholder>
@@ -15,11 +16,11 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_cry_icon" translatesAutoresizingMaskIntoConstraints="NO" id="3vD-NS-8AP">
-                    <rect key="frame" x="164" y="202" width="48" height="48"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3vD-NS-8AP">
+                    <rect key="frame" x="125" y="142" width="125" height="108"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="48" id="4mI-6n-T6K"/>
-                        <constraint firstAttribute="width" constant="48" id="wto-z1-RLo"/>
+                        <constraint firstAttribute="height" constant="108" id="4mI-6n-T6K"/>
+                        <constraint firstAttribute="width" constant="125" id="wto-z1-RLo"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LqX-nP-GqN">
@@ -27,8 +28,8 @@
                     <constraints>
                         <constraint firstAttribute="width" constant="250" id="OJv-bw-BfO"/>
                     </constraints>
-                    <string key="text">快快登录吧
-好友动态让你过把瘾儿~
+                    <string key="text">赶紧登录吧
+好友动态让你笑翻天~
 ~~~欧耶~~~</string>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,6 +68,5 @@
     <resources>
         <image name="friendsTrend_login" width="243" height="48"/>
         <image name="friendsTrend_login_click" width="243" height="48"/>
-        <image name="header_cry_icon" width="48" height="48"/>
     </resources>
 </document>

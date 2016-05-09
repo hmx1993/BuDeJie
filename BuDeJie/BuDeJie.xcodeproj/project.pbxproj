@@ -85,6 +85,7 @@
 		55EDA6D31CCBB1BB0054CB68 /* HMXHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EDA6D21CCBB1BB0054CB68 /* HMXHTTPSessionManager.m */; };
 		55EDA6D61CCBB3410054CB68 /* HMXDIYHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EDA6D51CCBB3410054CB68 /* HMXDIYHeader.m */; };
 		55EDA6D91CCBB6430054CB68 /* HMXRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EDA6D81CCBB6430054CB68 /* HMXRefreshHeader.m */; };
+		55F5188A1CE0544900D8EDC7 /* gaoxiao.gif in Resources */ = {isa = PBXBuildFile; fileRef = 55F518891CE0544900D8EDC7 /* gaoxiao.gif */; };
 		9B7368DC6BCF97F37CD8BF7A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0327E7A077ACA594D851FE /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -223,6 +224,7 @@
 		55EDA6D51CCBB3410054CB68 /* HMXDIYHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXDIYHeader.m; sourceTree = "<group>"; };
 		55EDA6D71CCBB6430054CB68 /* HMXRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMXRefreshHeader.h; sourceTree = "<group>"; };
 		55EDA6D81CCBB6430054CB68 /* HMXRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMXRefreshHeader.m; sourceTree = "<group>"; };
+		55F518891CE0544900D8EDC7 /* gaoxiao.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gaoxiao.gif; sourceTree = "<group>"; };
 		90C153BEF161D24B7D53C3D3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AB0327E7A077ACA594D851FE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -271,6 +273,7 @@
 		557774371C94037D00AA37D5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				55F518891CE0544900D8EDC7 /* gaoxiao.gif */,
 				559768A91CAEBF9D0046D2D2 /* 启动图片 */,
 			);
 			name = "Supporting Files";
@@ -789,6 +792,7 @@
 				551B37501CBFA9BA00D5F1AB /* HMXTopicCell.xib in Resources */,
 				55BD12D51CCE136F0053DBAB /* HMXRecommendViewController.xib in Resources */,
 				553848FB1CB5C33A00F1ACA5 /* HMXSquareCell.xib in Resources */,
+				55F5188A1CE0544900D8EDC7 /* gaoxiao.gif in Resources */,
 				559768B51CAEBF9D0046D2D2 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 				559768A81CAEBD560046D2D2 /* HMXADViewController.xib in Resources */,
 				553848F61CB5BD6600F1ACA5 /* HMXMeViewController.storyboard in Resources */,
@@ -1019,9 +1023,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = BuDeJie/Classes/Other/BuDeJie.pch;
 				INFOPLIST_FILE = BuDeJie/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.520hmx.BuDeJie;
+				PRODUCT_BUNDLE_IDENTIFIER = com.520hmx.youmo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -1038,9 +1042,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = BuDeJie/Classes/Other/BuDeJie.pch;
 				INFOPLIST_FILE = BuDeJie/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.520hmx.BuDeJie;
+				PRODUCT_BUNDLE_IDENTIFIER = com.520hmx.youmo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

@@ -16,10 +16,12 @@
 
 +(void)load
 {
-    [[UINavigationBar appearanceWhenContainedIn:self, nil] setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[self class]]] setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
     
     //设置富文本属性
-    UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedIn:self, nil];
+//    UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedIn:self, nil];
+    
+    UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[self class]]];
     NSMutableDictionary *attr = [NSMutableDictionary dictionary];
     attr[NSFontAttributeName] = [UIFont systemFontOfSize:20];
     navBar.titleTextAttributes = attr;

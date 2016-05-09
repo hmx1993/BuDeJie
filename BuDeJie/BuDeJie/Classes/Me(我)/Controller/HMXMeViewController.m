@@ -159,7 +159,7 @@ static CGFloat const margin = 1;
 -(void)setUpNav
 {
     //设置标题
-    self.navigationItem.title = @"我的";
+    self.navigationItem.title = @"个人";
     
     //添加设置按钮
     UIBarButtonItem *item1 = [UIBarButtonItem itemWithImage:@"mine-setting-icon" heighLightImage:@"mine-setting-icon-click" target:self action:@selector(settingBtnClick:)];

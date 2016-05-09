@@ -35,6 +35,9 @@ static NSString * const ID = @"HMXTopicCellID";
  *  该服务器不允许上拉和下拉同时存在
  */
 
+-(NSInteger)type{
+    return HMXTopTypeAll;
+}
 
 -(HMXHTTPSessionManager *)manager
 {

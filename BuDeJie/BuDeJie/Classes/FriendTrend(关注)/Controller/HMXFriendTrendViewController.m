@@ -9,7 +9,10 @@
 #import "HMXFriendTrendViewController.h"
 #import "HMXRecommendViewController.h"
 #import "HMXLoginRegisterController.h"
+#import <UIImage+GIF.h>
 @interface HMXFriendTrendViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *dongtuImageView;
 
 @end
 
@@ -21,8 +24,11 @@
     //设置左边的按钮
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" heighLightImage:@"friendsRecommentIcon-click" target:self action:@selector(friendsClick:)];
     self.view.backgroundColor = globleBg;
+    self.dongtuImageView.image = [UIImage sd_animatedGIFNamed:@"gaoxiao" ];
+    
 
 }
+
 
 -(void)friendsClick:(UIButton *)btn
 {

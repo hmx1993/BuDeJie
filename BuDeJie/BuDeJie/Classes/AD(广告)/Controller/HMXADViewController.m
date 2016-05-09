@@ -141,7 +141,7 @@ static NSInteger second = 3;
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {//失败后的回调
         
-        NSLog(@"%@",error);
+        NSLog(@"广告加载失败");
         
     }];
 }
