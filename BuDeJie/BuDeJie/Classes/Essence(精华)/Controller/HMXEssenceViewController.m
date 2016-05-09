@@ -56,7 +56,8 @@
 -(void)setUpNav
 {
     //设置标题
-    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+//    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    self.navigationItem.title = @"幽默天地";
     //设置左边的按钮
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage :@"MainTagSubIcon" heighLightImage:@"MainTagSubIconClick" target:self action:@selector(tagClick:)];
     self.view.backgroundColor = globleBg;

@@ -188,6 +188,7 @@ static NSString * const ID = @"HMXTopicCellID";
         
         //结束刷新
         [self.tableView.mj_footer endRefreshing];
+        
         //如果需要提示用户没有更多数据的时候用这个方法
 //        [self.tableView.mj_footer endRefreshingWithNoMoreData];
         
@@ -209,13 +210,13 @@ static NSString * const ID = @"HMXTopicCellID";
 {
     //添加下拉刷新
     self.tableView.mj_header = [HMXRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopics)];
-    self.tableView.mj_header.backgroundColor = [UIColor yellowColor];
     
     //立即进入刷新状态
     [self.tableView.mj_header beginRefreshing];
     
     //添加上拉刷新
     self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
+    
     self.tableView.mj_footer.backgroundColor = [UIColor cyanColor];
 }
 

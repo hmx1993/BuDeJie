@@ -76,7 +76,7 @@
     //我
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"HMXMeViewController" bundle:nil];
     HMXMeViewController *me = [storyboard instantiateInitialViewController];
-    [self setUpChildVC:me title:@"我的" imageName:@"tabBar_me_icon" selectedImageName:@"tabBar_me_click_icon"];
+    [self setUpChildVC:me title:@"个人" imageName:@"tabBar_me_icon" selectedImageName:@"tabBar_me_click_icon"];
 }
 
 //创建一个子控制器

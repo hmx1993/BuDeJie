@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HMXNewViewController : UIViewController
+@interface HMXNewViewController : UITableViewController
 
 @end

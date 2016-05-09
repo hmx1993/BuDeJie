@@ -42,6 +42,8 @@
 @property(nonatomic,assign)NSInteger playcount;
 /** 时长 */
 @property(nonatomic,assign)NSInteger voicetime;
+/** 声音的url */
+@property (nonatomic, strong) NSString *voiceuri;
 /** 小图  */
 @property (nonatomic, strong) NSString *image0;
 /** 大图  */
@@ -49,9 +51,13 @@
 /** 中图  */
 @property (nonatomic, strong) NSString *image2;
 
+
 //视频
 /** 时长 */
 @property(nonatomic,assign)NSInteger videotime;
+/** 视频url */
+@property(nonatomic,strong)NSString *videouri;
+
 
 //cell相关
 /** cell的高度 */

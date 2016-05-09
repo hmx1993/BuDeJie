@@ -193,8 +193,6 @@ static CGFloat const margin = 1;
     //让按钮处于选中状态
     //注意:按钮的选中状态必须要手动设置
     btn.selected = !btn.selected;
-    
-    HMXLog(@"夜间模式按钮被点击了");
 }
 
 

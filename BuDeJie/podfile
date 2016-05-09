@@ -4,3 +4,4 @@ pod ‘MJExtension’
 pod 'AFNetworking'
 pod ‘MJRefresh’
 pod ‘SVProgressHUD’
+pod ‘MBProgressHUD’

@@ -7,7 +7,5 @@
 //
 
 #import <MJRefresh/MJRefresh.h>
-
-@interface HMXRefreshHeader : MJRefreshNormalHeader
-
+@interface HMXRefreshHeader : MJRefreshGifHeader
 @end

@@ -8,6 +8,6 @@
 
 #import <MJRefresh/MJRefresh.h>
 
-@interface HMXDIYHeader : MJRefreshHeader
+@interface HMXDIYHeader : MJRefreshGifHeader
 
 @end

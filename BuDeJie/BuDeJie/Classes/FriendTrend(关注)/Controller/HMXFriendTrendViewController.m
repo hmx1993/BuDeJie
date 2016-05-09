@@ -28,7 +28,6 @@
 {
     //跳转到"推荐关注"控制器
     HMXRecommendViewController *recommend = [[HMXRecommendViewController alloc] init];
-    
     recommend.view.backgroundColor = globleBg;
     
     [self.navigationController pushViewController:recommend animated:YES];
@@ -36,11 +35,9 @@
 
 //点击了"立即登录注册"
 - (IBAction)loginRegisterBtnClick:(id)sender {
-    
     //modal出登录注册的控制器
     HMXLoginRegisterController *loginRegister = [[HMXLoginRegisterController alloc] init];
     
     [self presentViewController:loginRegister animated:YES completion:nil];
-    
 }
 @end

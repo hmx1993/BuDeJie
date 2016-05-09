@@ -8,34 +8,57 @@
 
 #import "HMXTopicVoiceView.h"
 #import "HMXSeeBigPictureController.h"
+#import <AVFoundation/AVFoundation.h>
+#import <AVKit/AVKit.h>
+#import "PlayAndPuaseBtn.h"
 @interface HMXTopicVoiceView ()
 @property (weak, nonatomic) IBOutlet UILabel *playcountLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *voicetimeLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *picture;
 
+//播放器
+@property(nonatomic,strong)AVPlayer *player;
+
+//播放和暂停按钮
+@property (weak, nonatomic) IBOutlet PlayAndPuaseBtn *playAndPuaseBtn;
+
 @end
 
 @implementation HMXTopicVoiceView
 
-//给ImageView添加点击手势
--(void)awakeFromNib
+
+-(AVPlayer *)player
 {
-    
-    self.picture.userInteractionEnabled = YES;
-    [self.picture addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(seeOriginalImage)]];
+    if (_player == nil) {
+        
+        //根据url创建一个item
+        AVPlayerItem *item = [AVPlayerItem playerItemWithURL:[NSURL URLWithString:self.topics.voiceuri]];
+        
+        AVPlayer *player = [AVPlayer playerWithPlayerItem:item];
+        
+        _player = player;
+        
+    }
+    return _player;
 }
 
-//当点击图片的时候调用
--(void)seeOriginalImage
-{
-    HMXSeeBigPictureController *bigPictureVc = [[HMXSeeBigPictureController alloc] init];
-    //传模型
-    bigPictureVc.topics = self.topics;
+- (IBAction)playAndPuaseBtn:(PlayAndPuaseBtn *)sender {
     
-    [self.window.rootViewController presentViewController:bigPictureVc animated:YES completion:nil];
+    self.playAndPuaseBtn.selected = !sender.selected;
+    
+    if (self.playAndPuaseBtn.selected) {
+        
+        [self.player play];
+        
+        [self.playAndPuaseBtn setImage:[UIImage imageNamed:@"playButtonPause"] forState:UIControlStateSelected];
+    }else{
+        
+        [self.player pause];
+        
+        [self.playAndPuaseBtn setImage:[UIImage imageNamed:@"playButtonPlay"] forState:UIControlStateNormal];
+    }
 }
-
 
 -(void)setTopics:(HMXTipicsItem *)topics
 {

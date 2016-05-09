@@ -25,17 +25,14 @@
     
     //计算cell中间View的高度(只要不是段子,就得增加相应图片的高度)
     if (self.type != HMXTopTypeWord) {
-        
         //根据服务器返回的图片的宽高比来显示图片
         CGFloat hmx_middelViewH = textMaxSize.width * self.height/self.width;
         CGFloat hmx_middelViewW = textMaxSize.width;
-        
         //如果图片的高度超过一个屏幕
         if (hmx_middelViewH >= HMXScreenH) {
             hmx_middelViewH = HMXScreenH * 0.3;
             self.isLong = YES;
         }
-        
         CGFloat hmx_middelViewX = HMXMargin;
         CGFloat hmx_middelViewY = _cellHeight;
         

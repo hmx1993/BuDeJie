@@ -10,15 +10,15 @@
 
 @implementation HMXHTTPSessionManager
 
--(instancetype)initWithBaseURL:(NSURL *)url sessionConfiguration:(NSURLSessionConfiguration *)configuration
-{
-    if (self == [super initWithBaseURL:url sessionConfiguration:configuration]) {
-        //统一设置请求头
-        [self.requestSerializer setValue:@"123" forHTTPHeaderField:@"Cookie"];
-        [self.requestSerializer setValue:@"iPhone" forHTTPHeaderField:@"Phone"];
-        [self.requestSerializer setValue:@"9.2" forHTTPHeaderField:@"OS_VERSION"];
-    }
-    return self;
-}
+//-(instancetype)initWithBaseURL:(NSURL *)url sessionConfiguration:(NSURLSessionConfiguration *)configuration
+//{
+//    if (self == [super initWithBaseURL:url sessionConfiguration:configuration]) {
+//        //统一设置请求头
+//        [self.requestSerializer setValue:@"123" forHTTPHeaderField:@"Cookie"];
+//        [self.requestSerializer setValue:@"iPhone" forHTTPHeaderField:@"Phone"];
+//        [self.requestSerializer setValue:@"9.2" forHTTPHeaderField:@"OS_VERSION"];
+//    }
+//    return self;
+//}
 
 @end

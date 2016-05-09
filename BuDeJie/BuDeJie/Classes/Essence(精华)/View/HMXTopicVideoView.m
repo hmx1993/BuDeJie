@@ -7,8 +7,8 @@
 //
 
 #import "HMXTopicVideoView.h"
-
-#import "HMXSeeBigPictureController.h"
+#import <AVFoundation/AVFoundation.h>
+#import <AVKit/AVKit.h>
 @interface HMXTopicVideoView ()
 
 @property (weak, nonatomic) IBOutlet UILabel *playcountLabel;
@@ -16,26 +16,46 @@
 @property (weak, nonatomic) IBOutlet UILabel *videotimeLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
+//播放控制器
+@property(nonatomic,strong)AVPlayerViewController *playerVC;
+
+//播放器
+@property(nonatomic,strong)AVPlayer *player;
+
 @end
 
 @implementation HMXTopicVideoView
+#pragma mark - 懒加载
+-(AVPlayerViewController *)playerVC
+{
+    if (_playerVC == nil) {
+        
+        AVPlayerViewController * playerVC = [[AVPlayerViewController alloc] init];
+        _playerVC = playerVC;
+    }
+    return _playerVC;
+}
 
 //给ImageView添加点击手势
 -(void)awakeFromNib
 {
-    
     self.imageView.userInteractionEnabled = YES;
     [self.imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(seeOriginalImage)]];
 }
 
-//当点击图片的时候调用
+
+//当点击视频图片的时候调用:播放视频
 -(void)seeOriginalImage
 {
-    HMXSeeBigPictureController *bigPictureVc = [[HMXSeeBigPictureController alloc] init];
-    //传模型
-    bigPictureVc.topics = self.topics;
     
-    [self.window.rootViewController presentViewController:bigPictureVc animated:YES completion:nil];
+    if (_player == nil) {
+        
+        //根据url创建一个播放器
+        AVPlayer* player = [[AVPlayer alloc] initWithURL:[NSURL URLWithString:self.topics.videouri]];
+        self.playerVC.player = player;
+        self.player = player;
+    }
+    [self.window.rootViewController presentViewController:self.playerVC animated:YES completion:nil];
 }
 
 -(void)setTopics:(HMXTipicsItem *)topics

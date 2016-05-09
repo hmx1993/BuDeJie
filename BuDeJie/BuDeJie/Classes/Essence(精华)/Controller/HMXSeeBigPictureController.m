@@ -33,7 +33,7 @@
     UIScrollView *scroll = [[UIScrollView alloc] init];
     scroll.contentSize = CGSizeMake(0, HMXScreenW * self.topics.height / self.topics.width);
     scroll.frame = self.view.bounds;
-    scroll.backgroundColor = [UIColor greenColor];
+    scroll.backgroundColor = [UIColor blackColor];
     scroll.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     //设置代理(实现缩放)
     scroll.delegate = self;
